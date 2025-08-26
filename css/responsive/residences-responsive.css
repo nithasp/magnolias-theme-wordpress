@@ -1,0 +1,308 @@
+@media (max-width:1522px) {
+    .ul1 {
+        width: 50%;
+    }
+}
+
+@media (max-width:1500px) {
+    .RESIDENCES-CONTENT .head-title {
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width:1400px) {
+    .RESIDENCES-CONTENT .head-title {
+        font-size: 25px !important;
+    }
+    .content .sub-title {
+        font-size: 15px;
+    }
+    .RESIDENCES-CONTENT-item1-2-p3 {
+        font-size: 15px;
+    }
+    .RESIDENCES-CONTENT-item1-2-row {
+        font-size: 15px;
+    }
+    .RESIDENCES-CONTENT-item1-2-4 a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1300px) {
+    .RESIDENCES-CONTENT-item1-2 {
+        padding: 10px 30px 30px 60px;
+    }
+    .ul-penthouse-desktop {
+        display: none;
+    }
+    .ul-penthouse-1300px {
+        display: block;
+    }
+    .penthouse-paragraph-bdbutton-1300px {
+        margin-top: 15px !important;
+    }
+    .RESIDENCES-CONTENT-item1-2 p:nth-child(3) {
+        margin: 24px 0px;
+    }
+}
+
+@media (max-width:1200px) {
+    .RESIDENCES-CONTENT .inner, .residence-grid-images .inner {
+        width: 97%;
+    }
+
+    .Bedroom-suit-2-pic {
+        padding: 0px;
+    }
+    .bedroom-img-1, .bedroom-img-2, .bedroom-img-3 {
+        width: 1500px;
+    }
+    .RESIDENCES-CONTENT-row2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .RESIDENCES-CONTENT-row2 .ul2 {
+        margin-left: 0px;
+    }
+    .RESIDENCES-CONTENT-item1-2 .head-title, .RESIDENCES-CONTENT-item1-2 .sub-title, .RESIDENCES-CONTENT-item1-2-4 {
+        text-align: center;
+    }
+    .RESIDENCES-CONTENT-item1-2 {
+        margin-top: 35px;
+    }
+    /* .ul1 {
+        width: 33.33%;
+    } */
+    .ul-penthouse-desktop {
+        display: block;
+    }
+    .ul-penthouse-1300px {
+        display: none;
+    }
+    .RESIDENCES-CONTENT-item1-2-p3 {
+        font-size: 18px;
+    }
+    .RESIDENCES-CONTENT-item1-2-row {
+        font-size: 18px;
+    }
+    .RESIDENCES-CONTENT-item1-2-4 a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .home-banner.Magnolia-Website-Residences {
+        height: 500px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .RESIDENCES-CONTENT .inner, .residence-grid-images .inner {
+        width: 100%;
+    }
+
+    .residence-grid-images-row1-item1 {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:600px) {
+
+    .RESIDENCES-CONTENT-item1-2 {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width:568px) {
+    .RESIDENCES-CONTENT-item1-2-row {
+        margin-left: -29px;
+    }
+    .RESIDENCES-CONTENT-item1-2 .ul1 {
+        padding-left: 9px;
+    }
+    .RESIDENCES-CONTENT-item1-2-row .ul3 {
+        margin-left: 0px;
+    }
+    .residence-grid-images-row1 img {
+        width: 100%;
+    }
+    .residence-grid-images-row1 p {
+        margin-bottom: 30px;
+    }
+    .residence-grid-images-row1-item1 {
+        margin-bottom: 0px;
+    }
+    .ul1 {
+        width: 50% !important;
+    }
+    .ul-penthouse-mobile {
+        display: block !important;
+    }
+    .ul-penthouse-1300px {
+        display: none;
+    }
+    .ul-penthouse-desktop {
+        display: none;
+    }
+    /* .one-bedroom-suit-row .ul1,
+    .two-bedroom-suit-row .ul1 {
+        width: 33.33% !important;
+    } */
+}
+
+
+@media (max-width: 558px) {
+    .RESIDENCES-CONTENT-item1-2-row {
+        font-size: 16px;
+    }
+    .RESIDENCES-CONTENT .head-title {
+        font-size: 20px !important;
+    }
+    .content .sub-title {
+        font-size: 13px;
+    }
+    .RESIDENCES-CONTENT-item1-2-p3 {
+        font-size: 16px;
+    }
+    .RESIDENCES-CONTENT-item1-2-row {
+        font-size: 14px;
+    }
+    .RESIDENCES-CONTENT-item1-2-4 a {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 471px){
+    /* .one-bedroom-suit-row .ul1 {
+        width: 42% !important;
+    }
+    .one-bedroom-suit-row .ul2 {
+        width: 25% !important;
+    } */
+    .one-bedroom-suit-row .ul2 ul {
+        padding-left: 10px;
+    }
+    .one-bedroom-suit-row .ul3 {
+        margin-left: -2px;
+    }
+    .one-bedroom-suit-row .ul3 ul {
+        padding-left: 10px;
+    }
+}
+
+
+
+@media (max-width: 403px) {
+    .Magnolia-Website-Residences .cover {
+        background-position: 2% 5%;
+    }
+    .bottomBarMedia-item1, .bottomBarMedia-item2, .bottomBarMedia-item3 {
+        background-position: center bottom;
+        height: 81px;
+    }
+    .bottomBarMedia-item1 {
+        width: 68px;
+    }
+    .bottomBarMedia-item1 img {
+        margin-top: 41px;
+    }
+    .bottomBarMedia-item2 img {
+        margin-top: 43px;
+    }
+    .bottomBarMedia-item3 img {
+        margin-top: 42px;
+    }
+
+    /* .one-bedroom-suit-row .ul2 {
+        width: 28%;
+        margin-left: 10px;
+    } */
+
+    .one-bedroom-suit-row .ul2 ul {
+        padding-left: 5px;
+    }
+    /* .one-bedroom-suit-row .ul3 {
+        width: 27%;
+        margin-left: -10px;
+    } */
+    .one-bedroom-suit-row .ul3 ul {
+        padding-left: 10px;
+    }
+
+    /* .two-bedroom-suit-row .ul1 {
+        width: 36% !important;
+    } */
+    .two-bedroom-suit-row .ul1 ul {
+        margin-left: -7px;
+    }
+    /* .two-bedroom-suit-row .ul2 {
+        width: 40%;
+        margin-left: -25px;
+    }
+    .two-bedroom-suit-row .ul3 {
+        width: 40%;
+        margin-left: -40px;
+    } */
+
+    
+}
+
+@media (max-width: 383px) {
+    .Magnolia-Website-Residences .cover {
+        background-position: -55px 5%;
+    }
+    .RESIDENCES-CONTENT .head-title {
+        font-size: 20px !important;
+    }
+    .content .sub-title {
+        font-size: 14px;
+    }
+    .RESIDENCES-CONTENT-item1-2-p3 {
+        font-size: 16px;
+    }
+    .RESIDENCES-CONTENT-item1-2-row {
+        font-size: 13px;
+    }
+    .RESIDENCES-CONTENT-item1-2-4 a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 370px){
+    /* .one-bedroom-suit-row .ul1 {
+        width: 45% !important;
+    } */
+    .one-bedroom-suit-row .ul1 ul {
+        padding-left: 32px;
+    }
+    /* .one-bedroom-suit-row .ul2 {
+        width: 28% !important;
+    } */
+    .one-bedroom-suit-row .ul3 {
+        margin-left: -23px;
+    }
+}
+
+@media (max-width: 343px){
+    /* .one-bedroom-suit-row .ul2 {
+        margin-left: 3px;
+    } */
+    .one-bedroom-suit-row .ul2 ul {
+        padding-left: 5px;
+    }
+    /* .one-bedroom-suit-row .ul3 {
+        width: 30%;
+        margin-left: -15px;
+    } */
+    /* .two-bedroom-suit-row .ul2 {
+        width: 45%;
+        margin-left: -30px;
+    }
+    .two-bedroom-suit-row .ul3 {
+        width: 43%;
+        margin-left: -48px;
+    } */
+}

@@ -1,0 +1,3748 @@
+/*@font-face {
+    font-family: 'Noto';
+    src: url('fonts/NotoSansThai-Light.eot');
+    src: url('fonts/NotoSansThai-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NotoSansThai-Light.woff2') format('woff2'),
+        url('fonts/NotoSansThai-Light.woff') format('woff'),
+        url('fonts/NotoSansThai-Light.svg#NotoSansThai-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+*/
+
+/*
+Theme Name: Magnolia Wordpress
+Theme URI: Your Theme's URI
+Description: This is Magnolia Theme.
+Version: 1.0
+Author: Nitha
+Author URI: Your website address.
+*/
+
+@font-face {
+  src: url("../fonts/Amor Serif Pro.ttf");
+  font-family: "amorSerifPro";
+}
+
+@font-face {
+  src: url("../fonts/Amor Sans Text Pro Regular.otf");
+  font-family: "amorSerifRegular";
+}
+
+@font-face {
+  src: url("../fonts/Amor Serif Pro Bold.ttf");
+  font-family: "amorSerifProBold";
+}
+
+@font-face {
+  src: url("../fonts/Amor Serif Text Pro Bold.otf");
+  font-family: "amorSerifProBold2";
+}
+
+@font-face {
+  src: url("../fonts/Gotham-Black.otf");
+  font-family: "gotHamBlack";
+}
+
+@font-face {
+  src: url("../fonts/GothamLight.ttf");
+  font-family: "gotHamLight";
+}
+
+/* @font-face {
+  src: url("../fonts/GothamBold.ttf");
+  font-family: "gotHamBold";
+} */
+
+/* @font-face {
+  font-family: "gotHamMedium";
+  src: url("../fonts/GothamMedium.ttf") format("truetype");
+  font-weight: normal;
+} */
+
+@font-face {
+  font-family: "gotHamBold";
+  src: url("../fonts/hinted-Gotham-Bold.ttf") format("truetype"),
+    url("../fonts/hinted-Gotham-Bold.woff") format("woff"),
+    url("../fonts/hinted-Gotham-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "gotHamMedium";
+  src: url("../fonts/hinted-Gotham-Medium.ttf") format("truetype"),
+    url("../fonts/hinted-Gotham-Medium.woff") format("woff"),
+    url("../fonts/hinted-Gotham-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "gotHamBook";
+  src: url("../fonts/Gotham-Book.ttf") format("truetype"),
+    url("../fonts/Gotham-Book.woff") format("woff"),
+    url("../fonts/Gotham-Book.woff2") format("woff2");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: #fff;
+  font-family: "Ciutadella";
+  font-weight: normal;
+  font-size: 18px;
+  color: #362f2d;
+}
+
+/*///// ELEMENT /////*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+}
+
+/* a:hover {
+  color: white;
+} */
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+div,
+section {
+  position: relative;
+}
+
+a.y-g {
+  background: #ffa409;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ffa409 0%, #f5c300 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ffa409 0%, #f5c300 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ffa409 0%, #f5c300 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa409', endColorstr='#f5c300', GradientType=1);
+  /* IE6-9 */
+}
+
+.b-b {
+  background: #3570aa;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #3570aa 0%, #4ccce7 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #3570aa 0%, #4ccce7 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #3570aa 0%, #4ccce7 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3570aa', endColorstr='#4ccce7', GradientType=1);
+  /* IE6-9 */
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.tt-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: transLate(-50%, -50%);
+}
+
+.inner {
+  width: 90%;
+  position: relative;
+  display: inline-block;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sub-title {
+  font-family: "gotHamBold";
+  color: #c9952b !important;
+  letter-spacing: 1px;
+  margin-bottom: 10px !important;
+}
+
+.head-title {
+  font-family: "amorSerifPro";
+  text-shadow: 0px 1px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 30px !important;
+}
+
+/*///// GRID /////*/
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*///// MENU /////*/
+
+.nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background: #443013; */
+  /* background: url("images/New_Magnolia_Logo/new-expanded-menu.jpg") !important; */
+  z-index: 99999;
+  color: #fff;
+  transform: translateY(-105%);
+  opacity: 0;
+}
+
+.nav .inner {
+  width: 90%;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+.menulogo {
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.closemenu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.topmenu {
+  padding: 15px 0;
+  font-size: 12px;
+  font-family: "Campton";
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.menu-mob-layout {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: transLate(-50%, -50%);
+}
+
+.menu-mob-layout .mml {
+  display: none;
+}
+
+
+.navmenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navmenu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navmenu li a {
+  font-family: "amorSerifProBold";
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+  display: inline-block;
+  letter-spacing: 3px;
+}
+
+.navmenu li a:hover {
+  color: #c9952b;
+}
+
+.nav .lang {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+}
+
+.nav .lang a {
+  color: #fff;
+  font-family: "gotHamBook";
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0 15px;
+  display: inline-block;
+  position: relative;
+}
+/* 
+.nav .lang a:hover {
+  color:red !important;
+} */
+
+.nav .lang a.first {
+  padding-left: 0;
+}
+
+.nav .lang a.first:after {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.nav .bdbutton {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav .privacy {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  color: #fff;
+  font-family: "gotHamBook";
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0 20px;
+}
+
+/* .nav .privacy:hover {
+  color: #362f2d;
+} */
+
+.nav.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.menu-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: transLate(-50%, -50%);
+}
+
+/*///// HEADER /////*/
+
+.header {
+  width: 100%;
+  padding: 45px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 10;
+}
+
+.header.fix {
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.decreaseHEIGHT-IMG-LOGO {
+  height: 80px !important;
+}
+
+/* .logo {
+  height:50px;
+} */
+
+.header.fix .logo {
+  max-width: 190px;
+  height: auto;
+}
+
+.home-banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.home-banner .mask-banner {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url("../images/mask-banner.png") left top;
+  background-repeat: repeat-x;
+  max-height: 406px;
+}
+
+.home-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.home-slide .slide-obj {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.home-slide .slide-obj .caption {
+  display: inline-block;
+}
+
+.home-slide .slide-obj .caption p {
+  margin: 0;
+}
+
+
+/* .very-privileged {
+  background-image: url('../banners/banner1.jpg') !important;
+} */
+
+
+.caption.first {
+  width: 750px;
+  position: absolute;
+  padding: 39px 62px;
+  background: url("../images/New_Magnolia_Logo/Layernew.png") left bottom;
+  /* background: url('../images/New_Magnolia _Logo/background.png') left bottom; */
+  background-repeat: repeat-x;
+  min-height: 300px;
+  /*transform:transLate(-50%,-80%);*/
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.caption.first .title {
+  font-family: "Butler";
+  color: #fff;
+}
+
+.caption.first .title.t1 {
+  font-size: 24px;
+  font-family: "amorSerifProBold";
+  letter-spacing: 2px;
+}
+
+.caption.first .title.t2 {
+  font-size: 48px;
+  font-family: "amorSerifProBold";
+  letter-spacing: 5px;
+}
+
+.caption.first .title.t3 {
+  font-family: "gotHamBook";
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #362f2d;
+  margin-top: 10px;
+  text-shadow: 0px 1px;
+}
+
+.hr {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+
+.hr .line {
+  width: 44px;
+  height: 1px;
+  background: #362f2d;
+}
+
+.hrhome {
+  height: 22px;
+}
+
+.mainmenu {
+}
+
+.mainmenu a p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.mainmenu a {
+  padding: 0 20px;
+  color: #fff;
+  font-size: 12px;
+  font-family: "gotHamMedium";
+  font-weight: 10;
+  letter-spacing: 1px;
+  display: inline-block;
+  position: relative;
+}
+
+.mainmenu a:hover {
+  color: #ca972b;
+}
+
+.mainmenu a.first {
+  padding-left: 0;
+}
+
+.mainmenu a.first:after {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.mainmenu .bar {
+  width: 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.mainmenu .bar .line {
+  width: 40px;
+  height: 2px;
+  margin-top: 3px;
+  background: #fff;
+}
+
+.mainmenu .bar .line.first {
+  margin-top: 0;
+}
+
+.mainmenu a:hover .bar .line {
+  background: #ca972b;
+}
+
+.topcontact {
+}
+
+.topcontact a {
+  margin: 0 5px;
+}
+
+.topcontact a.call img {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+}
+
+.topcontact a.call p {
+  vertical-align: bottom;
+  margin: 0;
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.boulevard-offers {
+  font-family: "Calibri";
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.bdbutton {
+  border: 1px solid #c9952b;
+  padding: 14px 24px;
+  background: rgba(255, 255, 255, 0);
+  font-size: 12px;
+  font-family: "gotHamMedium";
+  font-weight: bold;
+  /* text-shadow: 0px 1px; */
+  letter-spacing: 1.5px;
+  display: inline-block;
+  color: #c9952b;
+  position: relative;
+}
+
+.bdbuttonContact {
+  margin-right: 8px;
+}
+
+/* .bdbutton:hover {
+  background: rgba(255, 255, 255, 0.2);
+} */
+
+.dbbutton {
+  border: 1px solid #c9952b;
+  padding: 14px 24px;
+  background: #c9952b;
+  font-size: 12px;
+  font-family: "Campton";
+  font-weight: 600;
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.dbbutton:hover {
+  background: #fff;
+  color: #ca972b;
+}
+
+.flagButton:hover {
+  color: white;
+}
+
+/*////CONTENT///////*/
+
+section.content {
+  width: 100%;
+}
+
+.pdct {
+  padding: 80px 0;
+}
+
+.pdct-nt {
+  padding: 0 0 80px 0;
+}
+
+.pdct-top {
+  padding-top: 80px;
+}
+
+.content p {
+  margin: 0;
+}
+
+.content .sub-title {
+  font-size: 16px;
+  color: #ca972b;
+}
+
+.content .head-title {
+  font-size: 48px;
+}
+
+/* .submitFooter {
+  position: absolute;
+  right: 43%;
+  bottom: 0;
+  transform: translateX(-12px);
+} */
+
+.very-privileged .hrhome {
+  height: 40px;
+}
+
+.very-privileged-line {
+  background: white !important;
+}
+
+.very-privileged-p3 {
+  color: white !important;
+  text-shadow: 0px 0px !important;
+}
+
+/****************** My CSS Edit (WAII) *******************/
+
+.myContainer {
+  width: 90%;
+}
+
+.imgFIT {
+  width: 100%;
+  height: 100%;
+}
+
+.RESIDENCES-SECTION .container,
+.residencesImage .container,
+.amenitiesImage .container {
+  width: 89.6%;
+}
+
+.RESIDENCES-SECTION .ct {
+  text-shadow: 0px 1px;
+}
+
+.navbar-section {
+  background: url('../images/New_Magnolia_Logo/new-expanded-menu.jpg') !important; 
+  background-position: bottom right; 
+  background-repeat:no-repeat;
+}
+
+
+.bdbutton.cagent-Responsive {
+  display: none;
+}
+.bdbuttonContact-section1-1100px {
+  display: none;
+
+  border: 1px solid #c9952b;
+  padding: 10px 40px;
+  background: rgba(255, 255, 255, 0);
+  font-size: 12px;
+  font-family: "gotHamMedium";
+  text-shadow: 0px 1px;
+  letter-spacing: 1px;
+  color: #c9952b;
+}
+
+.bdbuttonContact-section1-1100px:hover {
+  color: white;
+  background: #c9952b;
+}
+
+.bdbutton.explore-our-residences {
+  padding: 14px 25px;
+}
+a:focus {
+  color: #c9952b;
+  outline: none;
+}
+
+.p3-unordinary {
+  text-align: left;
+  margin-bottom: 20px !important;
+}
+
+.flagResponsive {
+  position: absolute;
+  right: 0;
+  display: none;
+  margin-right: 10px;
+}
+
+.definingLuxuryContent {
+  font-family: "Calibri";
+  font-size: 18px !important;
+  margin-bottom: 10px !important;
+}
+
+.address {
+  margin-bottom: 5px !important;
+}
+
+.experiences {
+  margin-bottom: 5px !important;
+}
+
+.residencesHeader {
+  margin-bottom: 5px !important;
+}
+
+.amenitiesHeader {
+  margin-bottom: 5px !important;
+}
+
+.top3picksHeaderLarge {
+  padding-top: 0px !important;
+  margin-bottom: 10px !important;
+  font-family: "amorSerifPro" !important;
+}
+
+.amenitiesImage {
+  margin-top: 30px;
+}
+
+.residencesImage {
+  margin-top: 30px;
+}
+
+.igtitle {
+  margin-bottom: 10px !important;
+}
+
+.unOrdinary {
+  font-family: "gotHamBook";
+  text-shadow: 0px 1px;
+  letter-spacing: 2px;
+}
+
+.unOrdinaryHeaderContent {
+  font-family: "amorSerifPro" !important;
+  font-size: 26px;
+  color: #ca972b;
+  padding: 40px 0 10px 0;
+}
+
+.unOrdinaryParagraph {
+  font-family: "Calibri";
+  margin-bottom: 30px !important;
+}
+
+
+.sevenStars ul {
+  list-style: none;
+}
+
+.sevenStars ul li::before {
+  content: "\2022";
+  color: #c9952b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.sevenStars ul li {
+  font-family: "Calibri";
+  font-size: 18px;
+}
+
+.amenities ul {
+  list-style: none;
+}
+
+.amenities ul li::before {
+  content: "\2022";
+  color: #c9952b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.amenities ul li {
+  font-family: "Calibri";
+  font-size: 18px;
+}
+
+.bangkok-most-luxurious-item3 {
+  font-family: "Calibri";
+}
+
+.top3picksHeader {
+  font-size: 26px;
+  font-family: "amorSerifProBold";
+  color: #c9952b;
+  padding: 40px 0 10px 0;
+}
+
+.top3picksHeader2 {
+  font-size: 19px;
+  font-family: "amorSerifProBold";
+  color: #c9952b;
+  padding: 0px 0 10px 0;
+}
+
+.top3picksParagraph {
+  font-family: "Calibri";
+}
+
+.mapwrap .top3picksHeader2::before {
+  content: "";
+  width: 10px;
+  height: 18px;
+  position: absolute;
+  left: -15px;
+  top: 3px;
+}
+
+.business .top3picksHeader2::before {
+  background: red;
+}
+
+.rightSideBarHeader {
+  background: url("../images/New_Magnolia_Logo/background-right-side2.png") !important;
+  text-align: center;
+  color: white;
+  z-index: 999;
+  position: absolute;
+  transform: translateY(110%);
+  right: 0;
+  padding: 30px 10px;
+}
+.rightSideBarHeader-residences {
+  background: url("../images/New_Magnolia_Logo/background-right-side2.png") !important;
+  text-align: center;
+  color: white;
+  z-index: 999;
+  position: absolute;
+  /* transform: translateY(110%); */
+  right: 0;
+  bottom: 0;
+  padding: 30px 10px;
+}
+
+.rightSideBarHeader-item span {
+  font-family: "Calibri";
+  font-size: 12px;
+  color: white;
+}
+
+.rightSideBarHeader-item:nth-child(2) {
+  margin: 15px 0px !important;
+}
+
+.bdbutton:hover {
+  color: white;
+  background: #c9952b;
+}
+
+.flagButton {
+  color: #be8e2a;
+  font-family: "gotHamBold";
+  font-size: 12px;
+  padding: 14px 0px;
+}
+
+.flagButton img {
+  margin-right: 3px;
+}
+
+.dropdown-magnolias {
+  display: none;
+}
+.dropdown-magnolias-responsive {
+  display: none;
+}
+
+.dropdown-magnolias-responsive-hide {
+  display: none !important;
+}
+.dropdown-magnolias-display {
+  display: inline-block !important;
+}
+
+.dropdown-magnolias-responsive-display {
+  display: block !important;
+  text-align: right;
+}
+
+.dbbutton:hover {
+  color: white;
+}
+
+.inOrderForUs {
+  margin-bottom: 30px;
+  font-family: "amorSerifPro";
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 2;
+  padding: 0px 38px;
+}
+
+.form-wrap.left.accept {
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.head-title.footer-header {
+  margin-bottom: 62px !important;
+}
+
+.addMarginMainMenu {
+  margin-top: 30px !important;
+}
+
+.addMarginTopContact {
+  margin-top: 20px !important;
+}
+
+.experiences .D-9 {
+  width: 78% !important;
+}
+
+.THROUGH-THE-LENS .introbox {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.TOP-3-PICKS {
+  margin-top:100px;
+}
+/* Residences Section */
+
+.home-banner.Magnolia-Website-Residences {
+  width: 100%;
+  height: 581px !important;
+}
+
+.Magnolia-Website-Residences .mask-banner {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url("../images/03_Magnolia_Website_Residences_images/mask-banner2.png")
+    left top;
+  background-repeat: repeat-x;
+  max-height: 406px;
+}
+
+.Magnolia-Website-Residences .cover {
+  background-position: top left;
+}
+
+.RESIDENCES-CONTENT-item1-2 {
+  text-align: left;
+  padding: 20px 30px 30px 60px;
+}
+
+.RESIDENCES-CONTENT-item1-2 p:nth-child(1) {
+  text-transform: uppercase;
+  font-family: "amorSerifPro";
+  font-size: 32px;
+  letter-spacing: 6px;
+  margin-bottom: 0px !important;
+}
+
+.RESIDENCES-CONTENT-item1-2 p:nth-child(3) {
+  margin: 35px 0px;
+}
+
+.RESIDENCES-CONTENT-item1-2-row {
+  margin-left: -21px;
+}
+
+.RESIDENCES-CONTENT-item1-2-row .ul3 {
+  margin-left: -40px;
+}
+
+.RESIDENCES-CONTENT-item1-2-row ul li {
+  list-style: none;
+}
+
+.RESIDENCES-CONTENT-item1-2-row ul li::before {
+  content: "\2022";
+  color: #c9952b;
+  /* font-weight: 900;
+  text-shadow: 0px 1px; */
+  display: inline-block;
+  width: 0.7em;
+  margin-left: -1em;
+}
+
+.RESIDENCES-CONTENT-item1-2 .ul1 {
+  padding: 0px;
+}
+
+.RESIDENCES-CONTENT-item1-2-4 {
+  margin-top: 35px !important;
+}
+
+.RESIDENCES-CONTENT-item1-2-4 .bdbutton {
+  padding: 10px 40px;
+}
+
+.ul-penthouse-1300px {
+  display: none;
+}
+.ul-penthouse-mobile {
+  display: none;
+}
+.bottomBarMedia {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: -23px;
+  transform: translateX(-50%);
+}
+
+.RESIDENCES-CONTENT-item1-2-row li,
+.RESIDENCES-CONTENT-item1-2-p3 {
+  font-family: "Calibri";
+}
+
+.RESIDENCES-CONTENT-item1-2-p3 {
+    margin: 35px 0px 35px 0px !important;
+}
+
+
+.RESIDENCES-CONTENT-row2 {
+  margin: 115px 0px;
+}
+
+.RESIDENCES-CONTENT-row2 .ul2 {
+  margin-left: -45px;
+}
+
+.residences-paragraph {
+  margin-top: 0px;
+}
+
+.residences-paragraph-content {
+  font-family: "amorSerifPro";
+  color: #c9952b;
+  font-size: 29px;
+}
+
+.residence-grid-images {
+  margin-top: 140px;
+  margin-bottom:150px;
+}
+
+.residence-grid-images-row1,
+.residence-grid-images-row2 {
+  font-family: "gotHamBook";
+  font-size: 16px;
+  /* text-shadow: 0px 0.1px; */
+}
+
+.residence-grid-images-row1 img,
+.residence-grid-images-row2 img {
+  margin-bottom: 30px;
+}
+
+.residence-grid-images-row1-item1 {
+  margin-bottom: 65px;
+}
+
+.mapwrap-header1 {
+  color: #95768b !important;
+}
+
+.mapwrap-header2 {
+  color: #7d9579 !important;
+}
+
+.mapwrap-header3 {
+  color: #caa83a !important;
+}
+
+.mapwrap-header4 {
+  color: #715f3a !important;
+}
+
+.mapwrap-header5 {
+  color: #59679b !important;
+}
+
+.mapwrap-header6 {
+  color: #c76746 !important;
+}
+
+.MAGNOLIAS-MAP {
+  font-family: calibri;
+}
+
+.footer-residences {
+  margin-top: 150px;
+}
+
+.foot-tel a:hover {
+  color: #c9952b;
+}
+
+.terms-of-use:hover {
+  color: #c9952b;
+}
+
+.bottomBarMedia-item1,
+.bottomBarMedia-item2,
+.bottomBarMedia-item3 {
+  background: url("../images/residences/background-media.png") no-repeat;
+  background-position: center;
+}
+.bottomBarMedia-span1,
+.bottomBarMedia-span2,
+.bottomBarMedia-span3 {
+  font-family: "Calibri";
+  font-size: 12px;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+.bottomBarMedia-item2,
+.bottomBarMedia-item3 {
+  padding: 0px 12px;
+}
+
+.bottomBarMedia-item2 {
+  margin-left: 13px;
+  margin-right: 14px;
+}
+
+.bottomBarMedia-item1 img {
+  margin-top: 16px;
+}
+.bottomBarMedia-item2 img {
+  margin-top: 18px;
+}
+
+.bottomBarMedia-item3 img {
+  margin-top: 17px;
+}
+
+.residences-section3 {
+  margin-bottom: 120px;
+}
+
+/* 1 Bedroom Section */
+.section5 .inner {
+  width: 74%;
+}
+.Magnolia-Website-one-bedroom .cover {
+  background-position: unset;
+}
+.home-banner.Magnolia-Website-one-bedroom {
+  width: 100%;
+  height: 581px !important;
+}
+
+.one-bedroom-section1 .head-title.address {
+  margin-bottom: -5px !important;
+  margin-top: 15px;
+}
+.one-bedroom-section1 .boulevard-offers {
+  margin-top: 10px;
+}
+.one-bedroom-section1 .boulevard-offers {
+  margin-top: 20px;
+}
+.one-bedroom-section2-item2 {
+  margin-bottom: 150px;
+}
+.one-bedroom-section2 .sub-title {
+  margin-bottom: 15px !important;
+}
+.one-bedroom-section2-item2-1 {
+  text-align: center;
+  padding-right: 0px;
+  width:458px;
+}
+.one-bedroom-section2-item2-2 {
+  text-align: left;
+  /* padding-left: 120px; */
+}
+.one-bedroom-section2-item2-2-1 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.one-bedroom-section2-item2-2-1 p {
+  font-family: "gotHamBold";
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.one-bedroom-section2-item2-2-2 img:nth-child(2) {
+  margin-top: 13px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.one-bedroom-section2-item2-2-2 img:nth-child(3) {
+  margin-top: 11px;
+}
+.one-bedroom-section2-item2-2-3 {
+  margin: 30px 0px;
+  text-align: center !important;
+}
+.one-bedroom-section2-item2-2-3 .D-4,
+.one-bedroom-section2-item2-2-4 .D-4 {
+  width: 31%;
+}
+.one-bedroom-section2-item2-2-3-1-1,
+.one-bedroom-section2-item2-2-3-2-1 {
+  font-family: calibri;
+}
+
+.one-bedroom-section2-item2-2-3-1,
+.one-bedroom-section2-item2-2-3-2 {
+  font-family: "gotHamBold";
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 5px !important;
+}
+.one-bedroom-section2-item2-2-3-2-1 sup {
+  top: -0.35em;
+  font-size: 65%;
+}
+.one-bedroom-section2-item2-2-4 {
+  margin-bottom: 30px;
+  line-height: 27px;
+}
+.one-bedroom-section2-item2-2-4 p {
+  font-family: "gotHamBold";
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 5px !important;
+  text-align: center;
+}
+.one-bedroom-section2-item2-2-4 ul:first-child {
+  padding-left: 20px;
+}
+.one-bedroom-section2-item2-2-4 ul {
+  font-family: "Calibri";
+}
+/* .one-bedroom-section2-item2-2-4 ul li span {
+  position: relative;
+  left: -5px;
+} */
+
+
+.one-bedroom-section2-item2-2-4-row {
+  padding-left: 200px;
+    margin-top: 50px;
+}
+.one-bedroom-sub-ul {
+  position: relative;
+  left: -22px;
+
+}
+.one-bedroom-section2-item2-2-5 {
+  text-align: center !important;
+}
+
+.one-bedroom-section2-item2-2-5 .bdbutton {
+  padding: 10px 35px;
+}
+.section5-item1 p,
+.section5-item2 p,
+.section5-item3 p {
+  text-align: left;
+}
+
+.section5-item1-2,
+.section5-item2-2,
+.section5-item3-2 {
+  font-family: "amorSerifPro";
+  font-size: 26px;
+  color: #c9952b;
+  margin-top: 30px;
+}
+
+.section5-item1-3,
+.section5-item2-3,
+.section5-item3-3 {
+  font-family: "Calibri";
+}
+
+.one-bedroom-section5 {
+  margin-bottom:150px;
+}
+
+
+/* 2 Bedroom Section */
+
+.home-banner.Magnolia-Website-two-bedroom {
+  width: 100%;
+  height: 581px !important;
+}
+
+.two-bedroom-section2 {
+  margin-bottom: 150px;
+}
+
+.two-bedroom-section2-item2-1 {
+  text-align: center;
+  width: 458px;
+}
+
+/* .two-bedroom-section2-item2 {
+  margin-top: 50px;
+} */
+.two-bedroom-section2-item2-2-1 {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.two-bedroom-section2-item2-2-1 p {
+  font-family: "gotHamBold";
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.two-bedroom-section2-item2-2 {
+  text-align: left;
+  /* padding-left: 120px; */
+}
+.two-bedroom-section2-item2-2-2 {
+  text-align: center;
+  margin-top: 50px;
+    margin-bottom: 50px;
+}
+.two-bedroom-section2-item2-2-3 {
+  margin: 30px 0px;
+  text-align: center;
+}
+.two-bedroom-section2-item2-2-3-1,
+.two-bedroom-section2-item2-2-3-2 {
+  font-family: "gotHamBold";
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 5px !important;
+}
+.two-bedroom-section2-item2-2-3-1-1,
+.two-bedroom-section2-item2-2-3-2-1 {
+  font-family: "Calibri";
+}
+.two-bedroom-section2-item2-2-4 p {
+  font-family: "gotHamBold";
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 5px !important;
+  text-align: center;
+}
+
+.two-bedroom-section2-item2-2-4 {
+  margin-bottom: 30px;
+  line-height: 27px;
+}
+.two-bedroom-section2-item2-2-4-row {
+  padding-left: 200px;
+  margin-top: 50px;
+}
+.two-bedroom-section2-item2-2-4 ul:first-child {
+  padding-left: 20px;
+}
+.two-bedroom-section2-item2-2-4 ul {
+  font-family: "Calibri";
+}
+.two-bedroom-section2-item2-2-4 ul li span {
+  position: relative;
+  left: -5px !important;
+}
+.two-bedroom-sub-ul {
+  position: relative;
+  left: -22px;
+}
+.two-bedroom-section2-item2-2-3 .D-4,
+.two-bedroom-section2-item2-2-4 .D-4 {
+  width: 31%;
+}
+.two-bedroom-section2-item2-2-5{
+  text-align: center;
+}
+.two-bedroom-section2-item2-2-5 .bdbutton {
+  padding: 10px 35px;
+}
+.two-bedroom-section5 {
+  margin-bottom:150px;
+}
+
+/* Location Section */
+.home-banner.Magnolia-Website-location {
+  width: 100%;
+  height: 581px !important;
+}
+
+.Magnolia-Website-location .cover {
+  background-position: unset;
+}
+
+.location-section1 .tt-center {
+  top: 20%;
+}
+
+.location-section3 {
+  margin-top: 90px;
+  margin-bottom: 150px;
+}
+}
+
+.location-section3-p1,
+.location-section3-p2 {
+  font-family: "Calibri";
+}
+.location-section3-p1 {
+  color: #c9952b;
+}
+
+
+
+/* Facilities Section */
+
+.home-banner.Magnolia-Website-facilities {
+  width: 100%;
+  height: 581px !important;
+}
+.Magnolia-Website-facilities .cover {
+  background-position: center;
+}
+
+.facilities-section1 .boulevard-offers {
+  line-height: 30px;
+  padding: 0px 62px;
+}
+
+.facilities-section2-item1-2 {
+  font-family: "amorSerifPro";
+  font-size: 24px;
+  color: #c9952b;
+  padding: 0px 75px;
+  margin-top: 100px !important;
+  line-height: 40px;
+}
+/* .facilities-section2-item1 {
+  padding-right: 20px;
+} */
+.facilities-section2-item2 {
+  padding-left: 70px;
+}
+.facilities-section2-item2-1 {
+  margin-top: 140px;
+  margin-bottom: 121px;
+  /* text-align: left; */
+}
+.facilities-section2-item2-1 p:nth-child(1) {
+  font-family: "gotHamBold";
+  font-size: 16px;
+  color: #c9952b;
+  letter-spacing: 1px;
+}
+.facilities-section2-item2-1 p:nth-child(2) {
+  font-family: "amorSerifProBold";
+  font-size: 48px;
+  letter-spacing: 3px;
+  margin: 10px 0px;
+}
+.facilities-section2-item2-1 p:nth-child(3) {
+  font-family: "Calibri";
+  line-height: 30px;
+  padding-right: 15px;
+}
+.facilities-section3 {
+  margin-top: 100px;
+}
+
+.facilities-section4 .boulevard-offers {
+  line-height: 30px;
+}
+
+.facilities-section5-item1-1,
+.facilities-section5-item2-2,
+.facilities-section5-item3-1,
+.facilities-section5-item4-2 {
+  height: 100%;
+}
+
+.facilities-section5-item1-2 {
+  text-align: center;
+  margin-top: 85px;
+}
+.facilities-section5-item1-2 .boulevard-offers {
+  line-height: 30px;
+}
+.facilities-section5-item2 {
+  padding-left: 70px;
+}
+
+.facilities-section5-item2-1-1 {
+  margin-top: 95px;
+}
+.facilities-section5-item2-1-1 .boulevard-offers {
+  line-height: 30px;
+}
+.facilities-section5-item2-2 {
+  margin-top: 110px;
+}
+.facilities-section5-row2 {
+  margin-top: 70px;
+}
+
+.facilities-section5-item3-2 {
+  margin-top: 80px;
+}
+
+.facilities-section5-item3-2 .boulevard-offers {
+  line-height: 30px;
+  padding: 0px 20px;
+}
+
+.facilities-section5-item4 {
+  padding-left: 70px;
+}
+
+.facilities-section5-item4-1-1 {
+  margin-top: 95px;
+}
+.facilities-section5-item4-1-1 .boulevard-offers {
+  line-height: 30px;
+}
+
+.facilities-section5-item4-2 {
+  margin-top: 70px;
+}
+
+.facilities-section6 {
+  margin-top: 150px;
+}
+.facilities-section6-item1 {
+  font-family: "amorSerifPro";
+  font-size: 24px;
+  color: #c9952b;
+  line-height: 40px;
+}
+
+.facilities-section7 {
+  margin-top: 130px;
+}
+.facilities-section8 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.facilities-section8 .boulevard-offers {
+  padding: 0px 50px;
+  line-height: 32px;
+}
+
+.facilities-section10 {
+  margin-top: 150px;
+}
+
+.facilities-section10-item1 {
+  font-family: "amorSerifPro";
+  font-size: 24px;
+  color: #c9952b;
+  line-height: 40px;
+}
+
+.facilities-section11 {
+  margin-top: 130px;
+}
+
+.facilities-section13-item1 {
+  font-family: "amorSerifPro";
+  font-size: 24px;
+  color: #c9952b;
+  line-height: 40px;
+}
+
+.facilities-section13-item1-1 {
+  margin-bottom: 140px;
+}
+
+.facilities-section13-item2 {
+  padding-left: 70px;
+}
+
+.facilities-section13-item2-1 {
+  margin-top: 95px;
+  text-align: left;
+}
+
+.facilities-section13-item2-1-1 .boulevard-offers {
+  line-height: 30px;
+}
+
+.facilities-section13-item2-2 {
+  margin-top: 65px;
+  height: 100%;
+}
+
+.facilities-section14 {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.facilities-section15 .boulevard-offers {
+  padding: 0px 50px;
+  line-height: 32px;
+}
+
+.facilities-section16 {
+  margin-top: 100px;
+  margin-bottom:150px;
+}
+.facilities-section16-item1-2 {
+  margin-top: 100px;
+}
+
+.facilities-section16-item1-2 .head-title.address {
+  font-size: 47px;
+}
+.facilities-section16-item1-2 .boulevard-offers {
+  padding: 0px 20px;
+  line-height: 30px;
+}
+.facilities-section16-item2 {
+  padding-left: 70px;
+}
+.facilities-section16-item2-1-1 {
+  margin-top: 95px;
+}
+.facilities-section16-item2-1-1 .head-title.address {
+  letter-spacing: 6px;
+}
+.facilities-section16-item2-1-1 .boulevard-offers {
+  line-height: 30px;
+}
+.facilities-section16-item2-2 {
+  margin-top: 50px;
+  height: 100%;
+}
+
+/* Services Section */
+.Magnolia-Website-services .cover {
+  background-position: unset;
+}
+
+.home-banner.Magnolia-Website-services {
+  width: 100%;
+  height: 581px !important;
+}
+
+.services-section1 .boulevard-offers {
+  line-height: 30px;
+}
+
+.services-section2-item1-1 {
+  font-family: "amorSerifPro";
+  font-size: 24px;
+  color: #c9952b;
+  line-height: 40px;
+  margin-top: 80px;
+}
+.services-section2-item2-1 {
+  margin-top: 230px;
+  /* text-align: left; */
+}
+.services-section2-item2-2 {
+  margin-top: 50px;
+}
+.services-section2-item2-1-1 .boulevard-offers {
+  line-height: 30px;
+}
+.services-section2-item2-1-1 .head-title.address {
+  font-size: 44px;
+}
+.services-section2-item2 {
+  padding-left: 70px;
+}
+.services-section3 {
+  margin-top: 150px;
+}
+
+.services-section4 .boulevard-offers {
+  line-height: 30px;
+}
+
+.services-section5-item1 img {
+  height: 100%;
+}
+.services-section5-item2 img {
+  margin: 40px 0px;
+}
+.services-section5-item2 .sub-title {
+  margin-top: 30px;
+}
+.services-section5-item2 .boulevard-offers {
+  line-height: 30px;
+}
+.services-section5-row2 {
+  margin-top: 130px;
+}
+
+.services-section6-item1 {
+  font-family: "amorSerifPro";
+  font-size: 24px;
+  color: #c9952b;
+  line-height: 40px;
+}
+
+.services-section5-1200PX {
+  display: none;
+}
+
+.boulevard-offers-section7 {
+  padding-right: 27px;
+}
+
+.services-section7 {
+  margin-bottom:150px !important;
+}
+
+/* Gallery Section */
+.gallery-section1 .boulevard-offers {
+  padding: 0px 30px;
+}
+.gallery-section2-item1 {
+  letter-spacing: 4px;
+  padding-left: 116px;
+}
+
+.gallery-section2-item1 div {
+  border-right: 1px solid #b8a896;
+  line-height: 14px;
+  display: inline-block;
+  padding-top: 0px;
+  margin-right: 50px;
+}
+
+.gallery-section2-item1 div:nth-child(4) {
+  border: none;
+}
+.gallery-section2-item1 div a {
+  font-family: "amorSerifProBold";
+  font-size: 15px;
+  color: #b8a896;
+  padding-right: 50px;
+}
+.gallery-section2-item1 div a:hover {
+  color: #443013;
+}
+
+.gallery-section3 .row {
+  margin-bottom: 70px;
+}
+.gallery-section3-inner {
+  /* border-top: 1px solid #e4ca95;
+  background: url(../images/gallery/back.png) no-repeat; */
+  padding-top: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.gallery-section3 img {
+  max-width: 90%;
+  margin-bottom: 50px;
+}
+
+.gallery-section4-item1 {
+  display: flex;
+  justify-content: center;
+  color: #dbd2c8;
+  padding: 0px;
+}
+.gallery-section4-item1 li {
+  list-style: none;
+}
+.gallery-section4-item1 li:before {
+  content: "•";
+  font-size: 300%;
+  padding-right: 5px;
+}
+.gallery-section4-item1 li:hover {
+  cursor: pointer;
+  color: #c9952b;
+  transition: 0.5s;
+}
+
+/* Contact Section */
+.home-banner.Magnolia-Website-Contact {
+  width: 100%;
+  height: 581px !important;
+}
+
+.contact-section1-item1 {
+  margin-top: 100px;
+  line-height: 30px;
+}
+.contact-section1-item2 {
+  font-family: "Calibri";
+  margin-top: 30px;
+}
+.contact-section1-p1 {
+  font-family: "Calibri";
+  font-weight: bold;
+  font-size: 18px;
+  color: #c9952b;
+  letter-spacing: 0.5px;
+}
+
+.contact-section1-p2 {
+  font-family: "Calibri";
+  margin-top: 5px;
+}
+
+.contact-section1-item2-img1,
+.contact-section1-item2-img2,
+.contact-section1-item2-img3 {
+  margin-right: 15px;
+}
+.contact-section1-item2-1,
+.contact-section1-item2-2,
+.contact-section1-item2-3 {
+  margin-right: 50px;
+}
+.contact-section1-item2-3 {
+  margin-right: 0px;
+}
+.contact-section2 .tt-center {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: transLate(-50%, -50%);
+}
+
+.contact-section3 .form-wrap {
+  font-family: "amorSerifProBold";
+  font-size: 22px;
+  color: #443013;
+}
+
+.contact-section3 .footer-form input {
+  padding-left: 200px;
+}
+
+.contact-section3 .form-wrap.bd {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-section3 .form-wrap.bd.left {
+  padding-left: 25px;
+  margin-bottom: 50px;
+}
+
+.contact-section3 label {
+  letter-spacing: 0px;
+}
+.contact-section3 label.det {
+  position: absolute;
+  top: 12px;
+  left: 23px !important;
+}
+
+.contact-section3 textarea {
+  padding-left: 176px !important;
+}
+
+.iAgree-contact-form {
+  text-align: center;
+  margin-bottom: 15px !important;
+}
+.iAgree-contact-checkmark {
+  left: 24% !important;
+}
+.iAgree-contact-form .iAgree {
+  color: #d7b376;
+}
+.submit-contact-us-button {
+  padding: 10px 60px !important;
+  transition: 0.5s !important;
+}
+
+.contact-section4 {
+  margin-top: 120px;
+}
+.content-section4-item1 {
+  font-family: "amorSerifPro";
+  font-size: 24px;
+  color: #c9952b;
+  line-height: 40px;
+}
+.contact-section5 {
+  margin-top: 75px;
+  margin-bottom: 150px;
+}
+
+/* RadioBox Custom */
+.radio-form1-1,
+.radio-form2-1,
+.radio-form3-1 {
+  display: inline-block;
+}
+
+.radio-form1-1 {
+  margin-left: 60px;
+}
+
+.radio-form1-1-radiobox,
+.radio-form2-1-radiobox,
+.radio-form3-1-radiobox {
+  padding-left: 0px !important;
+  width: 7% !important;
+}
+
+.radio-form1-1-radiobox {
+  left: -40% !important;
+  top: 42% !important;
+}
+.radio-form2-1-radiobox {
+  left: -27% !important;
+  top: 42% !important;
+}
+.radio-form3-1-radiobox {
+  left: -53% !important;
+  top: 42% !important;
+}
+.radio-form2-1,
+.radio-form3-1 {
+  margin-left: 50px;
+}
+.radio-form1-1-radiotext,
+.radio-form2-1-radiotext,
+.radio-form3-1-radiotext {
+  font-family: "calibri";
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 17px !important;
+  height: 17px !important;
+  border: 1px solid #ca9730 !important;
+  border-radius: 50%;
+  outline: none;
+  /* box-shadow: 0 0 3px 0px #ca9730 inset; */
+}
+
+input[type="radio"]:before {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 69%;
+  margin: 16% auto;
+  border-radius: 50%;
+}
+input[type="radio"]:checked:before {
+  background: #c9952b;
+}
+input[type="radio"]:focus {
+  outline: none;
+}
+
+/* Lifestyle Section */
+.home-banner.Magnolia-Website-Lifestyle {
+  width: 100%;
+  height: 581px !important;
+}
+
+.Magnolia-Website-Lifestyle .cover {
+  background-position: unset;
+}
+
+.lifestyle-section1 .tt-center,
+.lifestyle-section11 .tt-center {
+  top: 25%;
+}
+
+.lifestyle-section2-PC .boulevard-offers p:nth-child(2) {
+  font-family: "calibri";
+  font-size: 14px;
+  color: #c9952b;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.lifestyle-section2-PC .boulevard-offers p:nth-child(3) {
+  font-family: "calibri";
+  font-size: 14px;
+  color: #c9952b;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+.lifestyle-image-small {
+  margin: 10px 0px !important;
+}
+.p3-lifestyle-button .bdbutton {
+  padding: 3px 60px !important;
+}
+.single-time-button {
+  margin-top: 0px !important;
+}
+
+.lifestyle-section1 .boulevard-offers,
+.lifestyle-section7 .boulevard-offers,
+.lifestyle-section9 .boulevard-offers,
+.lifestyle-section13 .boulevard-offers {
+  line-height: 30px;
+}
+
+.lifestyle-section9 .head-title.address,
+.lifestyle-section13 .head-title.address {
+  margin: 20px 0px;
+}
+
+.bdbutton.call.bdbutton-expanded-menu2 {
+  padding: 13.6px 24px !important;
+}
+#bdbuttonCallImg2 {
+  margin-bottom: 2px !important;
+}
+
+.img-magnolias-map {
+  position: absolute;
+  left: -36px;
+  top: 3px;
+}
+
+.lifestyle-section13 {
+  margin-bottom:150px;
+}
+
+.lifestyle-bdbutton {
+  margin-top: 40px !important;
+  margin-bottom: 30px !important;
+}
+/****************** END!! CSS Edit (WAII) *******************/
+
+.hr.sixty {
+  height: 60px;
+}
+
+.slide-mock {
+}
+
+.slide-mock .slick-slide {
+  margin: 0;
+  height: 450px;
+}
+
+.slide-back {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.slide-mock-res {
+}
+
+.slide-mock-res .slick-slide {
+  margin: 0;
+  height: 450px;
+}
+
+.slide-back.top {
+  top: 100px;
+  transform: translateY(0%);
+}
+
+.slide-mock-amen {
+}
+
+.slide-mock-amen .slick-slide {
+  margin: 0;
+  height: 450px;
+}
+
+.rwrap {
+  padding: 20px 100px;
+  background: #fff;
+  display: inline-block;
+  width: 100%;
+}
+
+.rwrap .inner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.rwrap .inner .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/mask-left-trans.png") repeat-y left top;
+  z-index: 10;
+}
+
+.rwrap .inner .imghover {
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.rwrap .inner:hover .imghover {
+  transform: scale(1.1);
+}
+
+.rwrap .inner .imghover {
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.rwrap .inner:hover .imghover {
+  transform: scale(1.1);
+}
+
+.slide-next,
+.slide-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9991;
+}
+
+.slide-next {
+  right: 30px;
+}
+
+.slide-prev {
+  left: 30px;
+}
+
+.room-capt {
+  position: absolute;
+  left: 40px;
+  bottom: 100px;
+  z-index: 11;
+  color: #fff;
+  text-align: left;
+  z-index: 9991;
+}
+
+.room-capt .rcpt1 {
+  font-size: 16px;
+  font-family: "gotHamMedium";
+  font-weight: 600;
+  color: #c18f2a;
+  letter-spacing: 3px;
+}
+
+.room-capt .rcpt2 {
+  font-family: "amorSerifProBold";
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+
+.ct {
+  font-family: "Calibri";
+}
+
+.introbox {
+}
+
+.introbox .sub-title {
+  font-size: 16px;
+  color: #ca972b;
+}
+
+.introbox .head-title {
+  font-size: 48px;
+  color: #362f2d;
+}
+
+.exrow {
+  margin-top: 50px;
+}
+
+.exrow .head-title {
+  font-size: 26px;
+  color: #ca972b;
+  padding: 40px 0 25px 0;
+}
+
+.res-detail {
+  padding: 40px;
+}
+
+.resslide .slick-slide {
+  vertical-align: top;
+}
+
+.rdcol {
+}
+
+.auto-wrap {
+  width: auto;
+  position: relative;
+}
+
+.mapwrap {
+  margin-top: 68px;
+}
+
+.mapwrap .maprow {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.mapwrap .maprow a {
+  display: none;
+}
+
+.maprow ol {
+  margin: 0;
+  padding: 0;
+  counter-reset: li;
+}
+
+.maprow ol li {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  margin-left: -1px;
+  margin-top: 5px;
+}
+
+.maprow ol li:first-child {
+  margin-top: 0;
+}
+
+.maprow ol > li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  top: 27%;
+  left: -3em;
+  width: 13px;
+  margin-right: 5px;
+  padding: 0px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 9px;
+}
+
+.row-fluid.mapwrap {
+  margin-left: 27px;
+}
+
+.mapwrap .head-title {
+  font-size: 26px;
+  font-family: "amorSerifProBold";
+  text-shadow: 0px 0px;
+  color: #c9952b;
+  position: relative;
+  /* padding: 0px 0 0px 0; */
+  letter-spacing: 1px;
+  margin-bottom: 15px !important;
+  display:inline-block;
+}
+
+.mapwrap .head-title:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: -36px;
+  top: 3px;
+  display:none;
+}
+
+.education .head-title:before {
+  /* background: url("../images/New_Magnolia_Logo/mapWrap/Education.png"); */
+  /* background:black; */
+}
+
+.education ol > li:before {
+  color: #fff;
+  background: #95768b;
+}
+
+.educationHeader {
+  margin-left: 30px;
+}
+
+.hospital .head-title:before {
+  background: url("../images/New_Magnolia_Logo/mapWrap/Hospital.png");
+  /* background: #7d9579; */
+}
+
+.hospital ol > li:before {
+  color: #fff;
+  background: #8aa087;
+}
+
+.business .head-title:before {
+  background: url("../images/New_Magnolia_Logo/mapWrap/2/1.png");
+  /* background: #59679b; */
+}
+
+.business ol > li:before {
+  color: #fff;
+  background: #caa83a;
+}
+
+.shopping .head-title:before {
+  background: url("../images/New_Magnolia_Logo/mapWrap/2/2.png");
+  /* background: #c76746; */
+}
+
+.shopping ol > li:before {
+  color: #fff;
+  background: #715f3a;
+}
+
+.office .head-title:before {
+  background: url("../images/New_Magnolia_Logo/mapWrap/2/3.png");
+  /* background: #caa83a; */
+}
+
+.office ol > li:before {
+  color: #fff;
+  background: #59679b;
+}
+
+.hotel .head-title:before {
+  background: url("../images/New_Magnolia_Logo/mapWrap/2/4.png");
+  /* background: #715f3a; */
+}
+
+.hotel ol > li:before {
+  color: #fff;
+  background: #c76746;
+}
+
+.instagram {
+}
+
+.instagram .ins-img {
+  margin-bottom: 20px;
+}
+
+.instagram .ins-img .like {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  opacity: 0.7;
+}
+
+/*/////////FOOTER/////////*/
+
+footer {
+  width: 100%;
+  background: url("../images/New_Magnolia_Logo/background-footer-new.png")
+    no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  font-family: "Campton";
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 150px !important;
+}
+
+.footer-header {
+  font-family: "amorSerifPro" !important;
+  font-weight: lighter;
+}
+
+footer .inner {
+  width: 100%;
+  height: 100%;
+  /* background: rgba(54, 47, 45, 0.8); */
+  padding: 115px 90px;
+  display: block;
+  position: relative;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+}
+
+.logo-footer {
+  margin-bottom: 45px;
+}
+
+.footmenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 180px;
+}
+
+.footmenu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footmenu li a {
+  font-family: "amorSerifProBold";
+  color: #ca972b;
+  font-size: 14px;
+  padding: 10px 0;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.footmenu li a:hover {
+  color: #fff;
+}
+
+.foot-head {
+  font-family: "amorSerifProBold";
+  color: #ca972b;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.foot-tel {
+  font-family: "Calibri" !important;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.social-link {
+  display: inline-block;
+  color: #ca972b;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ca972b;
+  position: relative;
+  margin-right: 5px;
+  margin-top: 18px;
+}
+
+.social-link .fa {
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: transLate(-50%, -50%);
+}
+
+.social-link:hover {
+  background: #ca972b;
+}
+
+.social-link:hover .fa {
+  color: #362f2d;
+}
+
+.copyright {
+  margin-top: 115px;
+  font-family: "Calibri";
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.compasslogo {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.footer-form {
+}
+
+.footer-form .head-title {
+  font-size: 30px;
+  color: #ca972b;
+  margin-bottom: 60px;
+}
+
+.form-wrap {
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 55px;
+  font-family: "amorSerifPro";
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #f5f5f5;
+}
+
+.form-wrap.bd {
+  border-bottom: 1px solid #625c57;
+}
+
+.footer-form {
+  font-family: "Butler";
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-form label {
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-form input {
+  width: 100%;
+  padding-left: 55px;
+  background: none;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-content {
+  padding: 0 50px 55px 50px;
+  font-family: "amorSerifPro";
+}
+
+.form-wrap.mb {
+  margin-bottom: 25px;
+}
+
+.footer-form textarea {
+  width: 100%;
+  padding-left: 55px;
+  background: none;
+  border: none;
+  resize: none;
+}
+
+.footer-form label.det {
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+.accept {
+  color: #ca972b;
+}
+
+.accept input {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: translateY(0%);
+  display: inline-block;
+}
+
+.bdbutton.submit {
+  padding-left: 55px;
+  padding-right: 55px;
+  font-family: "gotHamMedium";
+  /* text-shadow: 0px 1px; */
+}
+
+.inner.content {
+  padding: 0 40px;
+}
+
+.center-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) !important;
+}
+
+/*/////////CHECKBOX////////////////*/
+
+.form-wrap .container {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.form-wrap .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+.form-wrap .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 24px;
+  background-color: none;
+  border: 1px solid #ca972b;
+}
+
+/* On mouse-over, add a grey background color */
+
+.form-wrap .container:hover input ~ .checkmark {
+  background-color: #ca972b;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.form-wrap .container input:checked ~ .checkmark {
+  background-color: #ca972b;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*///// ANIMATE /////*/
+
+a,
+.nav,
+.transit,
+.mob-bar,
+.tabdata a:hover:after,
+.cdwrap,
+a img,
+.bar .line {
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.transz {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/*.apfade, .apfadeDown{opacity:0;}*/
+
+.parallax-slider {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*/////////////// CSS Only Firefox waii ///////////////*/
+@-moz-document url-prefix() {
+  .bdbutton {
+    font-weight: normal;
+    text-shadow: 0px 0.5px;
+  }
+  @media (max-width: 1200px) {
+    .RESIDENCES-SECTION .container,
+    .residencesImage .container,
+    .amenitiesImage .container {
+      width: 99% !important;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .two-bedroom-section2-item2-2-4 ul li span {
+      left: -2px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .DEFINING-LUXURY-SECTION .inner,
+    .UNORDINARY-EXPERIENCES .inner,
+    .NEIGHBOURHOOD .inner,
+    .TOP-3-PICKS .inner,
+    .MAGNOLIAS-MAP .inner,
+    .THROUGH-THE-LENS .inner {
+      width: 98% !important;
+    }
+
+    .RESIDENCES-SECTION .container,
+    .residencesImage .container,
+    .amenitiesImage .container {
+      width: 99% !important;
+    }
+  }
+}
+
+/*/////////////// CSS Only Safari waii ///////////////*/
+
+/* Safari 9+ */
+
+@supports (-webkit-marquee-repetition: infinite) and (object-fit: fill) {
+  .sub-title {
+    font-weight: bold;
+  }
+  .bdbutton,
+  .bdbutton.submit,
+  .bdbuttonContact-section1-1100px {
+    font-family: "gotHamBlack";
+    font-weight: normal;
+  }
+  .bdbuttonContact-section1-1100px {
+    text-shadow: 0px 0px;
+  }
+  .sub-title.unOrdinary {
+    letter-spacing: 1px;
+  }
+  .mainmenu a {
+    font-family: "gotHamBlack";
+  }
+
+  /* Safari 9+ Responsive */
+  @media (max-width: 992px) {
+    /* One Bedroom */
+    /* .one-bedroom-section2-item2-2-3-1,
+    .one-bedroom-section2-item2-2-3-2{
+        font-weight: bold;
+    }
+    .one-bedroom-section2-item2-2-4 ul li span {
+      left: -5px !important;
+    }
+
+    .one-bedroom-section2-item2-2-4 p {
+      font-weight: bold;
+    } */
+
+    /* Two Bedroom */
+    /* .two-bedroom-section2-item2-2-3-1,
+    .two-bedroom-section2-item2-2-3-2{
+        font-weight: bold;
+    }
+    .two-bedroom-section2-item2-2-4 p {
+      font-weight: bold;
+    }
+    .two-bedroom-section2-item2-2-4 ul li span {
+      left: -5px !important;
+    } */
+  }
+}
+
+/* Safari 10.1+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @media {
+    .bdbutton {
+      padding: 20px 24px 12px 24px !important;
+    }
+
+    .bdbutton.submit {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+    }
+    .bdbuttonContact-section1-1100px {
+      padding: 22px 24px 12px 24px;
+    }
+    .very-privileged-p3 {
+      font-weight: bold;
+    }
+    .rightSideBarHeader {
+      padding: 30px 10px 30px 20px;
+    }
+  }
+}
+
+/*///// RESPONSIVE /////*/
+
+@media (max-width: 1650px) {
+}
+
+@media (max-width: 1600px) {
+  @media (max-width: 1500px) {
+    .placeYouCallHome {
+      font-size: 30px !important;
+    }
+    .placeYouCallHome br {
+      content: " " !important;
+    }
+    .inner.content {
+      padding: 0px 0px 0px 10px;
+    }
+  }
+  @media (max-width: 1461px) {
+    .unOrdinary-item3 br {
+      display: none;
+    }
+    .p3-unordinary a {
+      font-size: 10px;
+    }
+    .unOrdinaryParagraph {
+      font-size: 16px;
+      margin-bottom: 35px !important;
+    }
+  }
+  @media (max-width: 1456px) {
+    .bdbutton.call {
+      padding: 5px 10px;
+      letter-spacing: 0px;
+      font-size: 12px;
+    }
+    .bdbutton.bdbuttonContact {
+      padding: 5px 10px;
+      letter-spacing: 0px;
+      font-size: 12px;
+    }
+    .bdbutton.cagent {
+      padding: 5px 20px;
+      letter-spacing: 0px;
+      font-size: 12px;
+    }
+    .topcontact a.call img {
+      left: 10px;
+    }
+
+    .bdbutton.call.bdbutton-expanded-menu2 {
+      padding: 4.4px 10px !important;
+      letter-spacing: 0px;
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 1435px) {
+    .unOrdinary-item3 br {
+      display: block;
+    }
+  }
+  @media (max-width: 1425px) {
+    .center-right {
+      position: relative;
+      top: auto;
+      right: auto;
+      transform: translateY(0) !important;
+    }
+    .navmenu li a {
+      font-size: 24px;
+    }
+    .bangkok-most-luxurious-item2 {
+      font-size: 35px !important;
+      margin-bottom: 5px !important;
+    }
+    .bangkok-most-luxurious-item3 {
+      font-size: 17px !important;
+    }
+  }
+  @media (max-width: 1358px) {
+    .placeYouCallHome {
+      font-size: 28px !important;
+    }
+    .iAgree br {
+      display: none;
+    }
+  }
+  @media (max-width: 1307px) {
+    .unOrdinary-item3 br {
+      display: none;
+    }
+  }
+  @media (max-width: 1293px) {
+    .placeYouCallHome {
+      font-size: 25px !important;
+    }
+    .definingLuxuryContent {
+      font-size: 17px !important;
+    }
+  }
+  @media (max-width: 1289px) {
+    .unOrdinary-item3 .bdbutton {
+      padding: 14px 15px;
+    }
+  }
+  @media (max-width: 1230px) {
+    .UNORDINARY-EXPERIENCES .inner {
+      width: 92%;
+    }
+  }
+  @media (max-width: 1225px) {
+    .bangkok-most-luxurious-item3 {
+      font-size: 16px !important;
+    }
+  }
+  @media (max-width: 1200px) {
+    .RESIDENCES-SECTION .container,
+    .residencesImage .container,
+    .amenitiesImage .container {
+      width: 100%;
+    }
+    .DEFINING-LUXURY-SECTION .inner,
+    .UNORDINARY-EXPERIENCES .inner,
+    .NEIGHBOURHOOD .inner,
+    .TOP-3-PICKS .inner,
+    .MAGNOLIAS-MAP .inner,
+    .THROUGH-THE-LENS .inner {
+      width: 97% !important;
+    }
+    .unOrdinaryHeaderContent {
+      font-size: 25px;
+    }
+    .UNORDINARY-EXPERIENCES .introbox {
+      margin-top: 100px;
+    }
+    .cagent {
+      display: none;
+    }
+    .bdbutton.call {
+      display: none;
+    }
+    .bdbutton.call.bdbutton-expanded-menu2 {
+      display: inline-block;
+    }
+    .bdbutton.cagent-Responsive {
+      display: inline-block;
+      padding: 10px 17px;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    .bdbuttonContact-section1 {
+      padding: 10px 40px !important;
+      letter-spacing: 1px !important;
+      font-size: 12px !important;
+    }
+    .slide-mock .slick-slide {
+      height: 250px;
+    }
+    .definingLuxuryHeader {
+      text-align: center;
+    }
+    .definingLuxuryParagraph {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .bangkok-most-luxurious {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .bangkok-most-luxurious-item2 {
+      font-size: 48px !important;
+      margin-bottom: 15px !important;
+    }
+    .experiences .D-9 {
+      width: 100% !important;
+    }
+    .slide-back {
+      display: none;
+    }
+    .room-capt {
+      left: 10px;
+      bottom: 10px;
+    }
+    .room-capt .rcpt2 {
+      font-size: 20px;
+    }
+    .rwrap {
+      padding: 30px;
+    }
+    .slide-next {
+      right: 15px;
+    }
+    .slide-prev {
+      left: 15px;
+    }
+    .home-banner .mask-banner {
+      background-position: left bottom;
+    }
+    .introbox .head-title {
+      font-size: 30px;
+    }
+    .mapwrap .head-title {
+      font-size: 19px;
+    }
+    .rwrap {
+      padding: 0;
+    }
+    .rwrap.slick-slide {
+      width: 100%;
+    }
+    .rwrap .inner .mask {
+      display: none;
+    }
+    .room-capt {
+      position: relative;
+      background: #000;
+      left: auto;
+      bottom: auto;
+      padding: 10px;
+    }
+    .room-capt .ct br {
+      display: none;
+    }
+    .after-slide {
+      padding-top: 20px;
+    }
+    footer .inner {
+      padding: 50px 20px 115px 0px;
+    }
+    .copyright {
+      left: 35px;
+    }
+    .compasslogo {
+      right: 30px;
+    }
+    .row-fluid.mapwrap {
+      margin-left: 45px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .bdbutton.call {
+      left: 58% !important;
+    }
+    .bdbutton.bdbuttonContact {
+      left: 41% !important;
+    }
+    .main-section1 .bdbuttonContact-section1 {
+      display: none;
+    }
+    .bdbuttonContact-section1-1100px {
+      display: inline-block;
+    }
+  }
+  @media (max-width: 1098px) {
+    .unOrdinary-item3 br {
+      display: block;
+    }
+  }
+  @media (max-width: 1001px) {
+    .unOrdinary-item3 br {
+      display: none;
+    }
+  }
+  @media (max-width: 992px) {
+    .slide-back {
+      display: none;
+    }
+    .room-capt {
+      left: 10px;
+      bottom: 10px;
+    }
+    .room-capt .rcpt2 {
+      font-size: 20px;
+    }
+    .rwrap {
+      padding: 30px;
+    }
+    .slide-next {
+      right: 15px;
+    }
+    .slide-prev {
+      left: 15px;
+    }
+    .home-banner .mask-banner {
+      background-position: left bottom;
+    }
+    .introbox .head-title {
+      font-size: 30px;
+    }
+    .mapwrap .head-title {
+      font-size: 19px;
+    }
+    .rwrap {
+      padding: 0;
+    }
+    .rwrap.slick-slide {
+      width: 100%;
+    }
+    .rwrap .inner .mask {
+      display: none;
+    }
+    .room-capt {
+      position: relative;
+      background: #000;
+      left: auto;
+      bottom: auto;
+      padding: 10px;
+    }
+    .room-capt .ct br {
+      display: none;
+    }
+    .after-slide {
+      padding-top: 20px;
+    }
+    .head-title.address,
+    .placeYouCallHome,
+    .bangkok-most-luxurious-item2 {
+      font-size: 30px !important;
+    }
+  }
+  @media (max-width: 942px) {
+    .unOrdinary-item1,
+    .unOrdinary-item2,
+    .unOrdinary-item3 {
+      width: 100%;
+    }
+    .unOrdinary-item1 img,
+    .unOrdinary-item2 img,
+    .unOrdinary-item3 img {
+      width: 100%;
+    }
+    .unOrdinaryParagraph {
+      margin-bottom: 25px !important;
+    }
+    .unOrdinary-item2 .unOrdinaryParagraph {
+      margin-bottom: 0px !important;
+    }
+  }
+  @media (max-width: 900px) {
+    footer .inner {
+      padding: 50px 20px 115px 0px;
+    }
+    .hideM {
+      display: none !important;
+    }
+    .bdbutton.cagent-Responsive {
+      display: none !important;
+    }
+    .mainmenu a.first:after {
+      display: none;
+    }
+    .all-rights-reserved {
+      display: block;
+      text-align: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .DEFINING-LUXURY-SECTION .inner,
+    .UNORDINARY-EXPERIENCES .inner,
+    .NEIGHBOURHOOD .inner,
+    .TOP-3-PICKS .inner,
+    .MAGNOLIAS-MAP .inner,
+    .THROUGH-THE-LENS .inner {
+      width: 98% !important;
+    }
+    .UNORDINARY-EXPERIENCES .introbox {
+      margin-top: 35px;
+    }
+    .unOrdinaryParagraph {
+      margin-bottom: 20px !important;
+    }
+    .flagResponsive {
+      display: inline-block;
+    }
+    .D-4.right.topcontact {
+      display: none;
+    }
+    .addMarginMainMenu {
+      margin-top: 0px !important;
+    }
+    .caption.first {
+      width: 90%;
+      padding: 20px;
+      top: 155px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .caption.first .title.t1 {
+      font-size: 18px;
+    }
+    .caption.first .title.t2 {
+      font-size: 24px;
+    }
+    .caption.first .title.t3 {
+      font-size: 18px;
+    }
+    .call {
+      display: none;
+    }
+    .header {
+      padding: 15px 0;
+    }
+    .mainmenu a.first {
+      padding-right: 0;
+    }
+    .mainmenu a.first:after {
+      display: none;
+    }
+    .mainmenu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 90;
+    }
+    .logo {
+      max-width: 190px;
+      height: auto;
+    }
+    .mainmenu .bar {
+      width: 20px;
+    }
+    .mainmenu .bar .line {
+      width: 20px;
+    }
+    .content .head-title {
+      font-size: 30px;
+    }
+
+    .mapwrap .head-title {
+      display:block;
+    }
+
+    .mapwrap .head-title:before {
+      display:block;
+    }
+
+    .img-magnolias-map {
+      display:none;
+    }
+
+    
+    /*--------- Expanded Menu -------------*/
+    .menulogo,
+    .closemenu {
+      top: 10px;
+    }
+    .menulogo {
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      transform: transLate(-50%, -50%);
+    }
+    .bdbutton.mml {
+      position: absolute !important;
+      left: 50% !important;
+      top: 98% !important;
+      transform: transLate(-50%, -50%) !important;
+    }
+    .lang.mml {
+      position: absolute !important;
+      left: 50% !important;
+      top: 115% !important;
+      transform: transLate(-50%, -50%) !important;
+    }
+    .privacy.mml {
+      position: absolute !important;
+      left: 50% !important;
+      top: 126% !important;
+      transform: transLate(-50%, -50%) !important;
+    }
+
+    .bdbutton.call.bdbutton-expanded-menu2 {
+      display: none;
+    }
+
+    /* --------------------------------- */
+    .bdbutton.bdbuttonContact {
+      display: none;
+    }
+    .topmenu {
+      margin: 0;
+    }
+    .navmenu {
+      position: relative;
+      left: auto;
+      top: auto;
+      transform: transLate(0, 0);
+    }
+    .navmenu li a {
+      font-size: 18px;
+    }
+    .nav .lang {
+      position: relative;
+      left: auto;
+      bottom: auto;
+    }
+    .nav .lang a.first {
+      padding-left: 20px;
+    }
+    .nav .bdbutton {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      transform: translateX(0);
+    }
+    .nav .privacy {
+      position: relative;
+      bottom: auto;
+      right: auto;
+    }
+    .margin-bottom-mobile {
+      margin-bottom: 20px;
+    }
+    .mapwrap .head-title {
+      font-size: 19px;
+    }
+    footer .inner {
+      padding: 20px 20px 130px 20px;
+    }
+    /*padding:20px 20px 80px 20px;*/
+    .logo-footer,
+    .footmenu {
+      margin-bottom: 15px;
+    }
+    .copyright {
+      margin-top: 15px;
+      left: 0;
+    }
+    .compasslogo {
+      position: relative;
+      margin: 15px 0;
+      right: 0;
+    }
+    footer .left,
+    footer .inner {
+      text-align: center;
+    }
+    footer .form-wrap.left {
+      text-align: left;
+    }
+    .footer-form {
+      margin-bottom: 20px;
+    }
+    .slick-list {
+      overflow: hidden;
+    }
+    /*.slide-next,.slide-prev{transform:translateY(0%); top:100px;}*/
+    .slide-next img,
+    .slide-prev img {
+      max-width: 40px;
+      height: auto;
+    }
+    .res-detail {
+      padding: 10px;
+    }
+    .content .head-title.igtitle {
+      font-size: 24px;
+    }
+    .inner.content {
+      padding: 0;
+    }
+    .mapcol {
+      padding: 0;
+    }
+    .mapwrap .head-title {
+      margin-left: 0;
+      padding: 10px;
+      color: #fff !important;
+    }
+    .mapwrap .head-title:before {
+      display: none;
+    }
+    .mapwrap .head-title:after {
+      content: "\f107";
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: 20px;
+      color: #fff;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .education .head-title {
+      background: #95768b;
+    }
+    .hospital .head-title {
+      background: #8aa087;
+    }
+    .business .head-title {
+      background: #caa83a;
+    }
+    .shopping .head-title {
+      background: #715f3a;
+    }
+    .office .head-title {
+      background: #59679b;
+    }
+    .hotel .head-title {
+      background: #c76746;
+    }
+    .mapwrap .maprow {
+      margin-bottom: 2px;
+    }
+    .mapwrap .maprow a {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+    .maprow ol {
+      display: none;
+    }
+    .maprow ol li {
+      margin-left: 30px;
+    }
+    .maprow ol li:first-child {
+      /* maprow ol li:first-child */
+    }
+    .mapwrap .maprow.listActive {
+      margin-bottom: 10px;
+    }
+    .mapwrap .maprow.listActive ol {
+      display: inline-block;
+    }
+    .mapwrap .maprow.listActive .head-title:after {
+      content: "\f106";
+    }
+    .bdbutton.hidden-M {
+      display: none;
+    }
+    .menu-mob-layout {
+      width: 100%;
+    }
+    .menu-mob-layout .mml {
+      display: inline-block;
+    }
+    .rwrap .inner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .inner {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .exrow .head-title {
+      padding: 15px 0;
+    }
+    .pdct-nt {
+      padding-bottom: 20px;
+    }
+    .pdct-top {
+      padding-top: 20px;
+    }
+    .pdct {
+      padding: 30px 0;
+    }
+    .footer-form .head-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .form-wrap {
+      margin-bottom: 20px;
+    }
+    .form-content {
+      padding: 0 20px 20px 20px;
+    }
+
+    /* My Code (WAII) */
+    .definingLuxuryRow {
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .copyright {
+      position: relative;
+    }
+    .row-fluid.mapwrap {
+      margin-left: 0px !important;
+    }
+    .mapwrap {
+      margin-top: 25px !important;
+    }
+    .instagram.exrow {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    .THROUGH-THE-LENS .introbox {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .head-title.footer-header {
+      margin-top: 30px;
+    }
+    .footer-item1 {
+      margin-top: 60px;
+    }
+    .submitFooter {
+      margin-top: 30px;
+    }
+    .all-rights-reserved {
+      display: inline;
+    }
+  }
+
+
+
+
+  @media (max-width: 568px) {
+    .bdbutton.private-viewing {
+      margin-top: 10px;
+      padding: 14px 28px;
+    }
+    .bdbutton.mml {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 559px) {
+    .placeYouCallHome {
+      font-size: 25px !important;
+    }
+    .caption.first .title.t1 {
+      font-size: 15px;
+    }
+    .caption.first .title.t3 {
+      margin-top: 0px;
+      font-size: 15px;
+    }
+    .rightSideBarHeader {
+      padding: 15px 5px;
+    }
+  }
+  @media (max-width: 552px) {
+    /*.content .head-title{font-size:20px;}*/
+    .content .head-title.igtitle {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 552px) {
+    .residenceBR {
+      display: block;
+    }
+  }
+  @media (max-width: 400px) {
+    footer .inner {
+      padding: 20px 20px 140px 20px;
+    }
+    .row-fluid.mapwrap {
+      margin-left: 0px !important;
+    }
+    .mapwrap {
+      margin-top: 25px !important;
+    }
+    .instagram.exrow {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    .caption.first .title.t1 {
+      font-size: 13px;
+    }
+    .caption.first .title.t2 {
+      font-size: 20px;
+    }
+    .caption.first .title.t3 {
+      font-size: 11px;
+    }
+    .nav .lang a.first {
+      padding-left: 0px;
+    }
+    .privacy.mml {
+      padding: 0px;
+    }
+    .lang.mml .second {
+      padding-left: 8px;
+    }
+    .lang.mml {
+      left: 52% !important;
+    }
+  }
+  @media (max-width: 340px) {
+    .logo {
+      max-width: 160px;
+      height: auto;
+    }
+    .header.fix .logo {
+      max-width: 170px;
+      height: auto;
+    }
+    .unOrdinary-item3 .bdbutton {
+      padding: 14px 13px;
+    }
+  }
+}
+
+/* Responsive Height */
+
+@media (max-height: 600px) {
+  .rightSideBarHeader {
+    transform: translateY(74%);
+  }
+}
+
+@media (max-height: 500px) {
+  .rightSideBarHeader {
+    transform: translateY(50%);
+  }
+}
+
+@media (max-height: 450px) {
+  /* .logo {
+    height: 65px;
+  } */
+  .caption.first {
+    top: 100px;
+  }
+}
+
+@media (max-height: 400px) {
+  .rightSideBarHeader {
+    padding: 10px 5px;
+  }
+  .rightSideBarHeader-item img {
+    width: 50%;
+  }
+  .rightSideBarHeader-item span {
+    font-size: 11px;
+  }
+}
+
+@media (max-height: 350px) {
+  .rightSideBarHeader {
+    transform: translateY(35%);
+  }
+}

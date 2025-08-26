@@ -1,0 +1,115 @@
+﻿<?
+
+$rows=0;
+
+require_once "../class/excel/class.writeexcel_workbook.inc.php";
+require_once "../class/excel/class.writeexcel_worksheet.inc.php";
+
+$fname = tempnam("/tmp", "contact-info.xls");
+$workbook = &new writeexcel_workbook($fname);
+$worksheet = &$workbook->addworksheet();
+
+
+$worksheet->set_column(0, 0, 10);
+$worksheet->set_column(1, 1, 25);
+$worksheet->set_column(2, 2, 25);
+$worksheet->set_column(3, 3, 50);
+$worksheet->set_column(4, 4, 20);
+$worksheet->set_column(5, 5, 20);
+$worksheet->set_column(6, 6, 20);
+$worksheet->set_column(7, 7, 15);
+$worksheet->set_column(8, 8, 20);
+$worksheet->set_column(9, 9, 20);
+$worksheet->set_column(10, 10, 25);
+$worksheet->set_column(11, 11, 25);
+$worksheet->set_column(12, 12, 50);
+$worksheet->set_column(13, 13, 25);
+$worksheet->set_column(14, 14, 60);
+
+$header =& $workbook->addformat();
+$header->set_bold();
+$header->set_align('center');
+$header->set_size(10);
+$header->set_color('black');
+$header->set_fg_color('silver');
+
+
+$txtLeft =& $workbook->addformat();
+$txtLeft->set_align('left');
+
+$f_ID =& $workbook->addformat();
+$f_ID->set_align('center');
+
+	
+$txtWarp =& $workbook->addformat();
+$txtWarp->set_text_wrap();
+
+$worksheet->set_row(0, 16);
+
+
+
+# Write some text header
+$worksheet->write(0, 0,  "Contact ID", $header);
+$worksheet->write(0, 1,  "Contact Date", $header);
+$worksheet->write(0, 2,  iconv('UTF-8','TIS-620','ชื่อ-สกุล'), $header);
+$worksheet->write(0, 3,  iconv('UTF-8','TIS-620','ที่อยู่'), $header);
+$worksheet->write(0, 4,  iconv('UTF-8','TIS-620','ตำบล'), $header);
+$worksheet->write(0, 5,  iconv('UTF-8','TIS-620','อำเภอ'), $header);
+$worksheet->write(0, 6,  iconv('UTF-8','TIS-620','จังหวัด'), $header);
+$worksheet->write(0, 7,  iconv('UTF-8','TIS-620','รหัสไปรษณีย์'), $header);
+$worksheet->write(0, 8,  iconv('UTF-8','TIS-620','โทรศัพท์'), $header);
+$worksheet->write(0, 9,  iconv('UTF-8','TIS-620','โทรสาร'), $header);
+$worksheet->write(0, 10,  iconv('UTF-8','TIS-620','อีเมล'), $header);
+$worksheet->write(0, 11,  iconv('UTF-8','TIS-620','ประเภทของสถานที่ที่ต้องการรับบริการ'), $header);
+$worksheet->write(0, 12,  iconv('UTF-8','TIS-620','ปัญหาที่พบและต้องการรับบริการ'), $header);
+$worksheet->write(0, 13,  iconv('UTF-8','TIS-620','บริการที่ใช้อยุ่ในปัจจุับัีน'), $header);
+$worksheet->write(0, 14,  iconv('UTF-8','TIS-620','ข้อความ'), $header);
+
+
+## Can loop get data here....
+
+	# Write Detail
+
+	$rows++;
+	//$worksheet->set_row($rows, 30);
+	
+	$worksheet->write($rows, 0,  $cID, $f_ID);  
+	$worksheet->write($rows, 1,  date('F j, Y H:i',$cDate)); 
+	$worksheet->write($rows, 2,  iconv('UTF-8','TIS-620',trim($cFullName)), $txtLeft);  
+	$worksheet->write($rows, 3,  iconv('UTF-8','TIS-620',$cAddress), $txtLeft); 
+	$worksheet->write($rows, 4,  iconv('UTF-8','TIS-620',$cDistric), $txtLeft); 
+	$worksheet->write($rows, 5,  iconv('UTF-8','TIS-620', $cCity), $txtLeft); 
+	$worksheet->write($rows, 6,  iconv('UTF-8','TIS-620',$cProvince), $txtLeft); 
+	$worksheet->write($rows, 7,  iconv('UTF-8','TIS-620',$cZipcode),$txtLeft); 
+	
+	$worksheet->write($rows, 8,  iconv('UTF-8','TIS-620',$cTelehone), $txtLeft); 
+	$worksheet->write($rows, 9,  iconv('UTF-8','TIS-620',$cFax), $txtLeft); 
+	$worksheet->write($rows, 10,  iconv('UTF-8','TIS-620',$cEmail), $txtLeft); 
+	
+	$worksheet->write($rows, 11,  iconv('UTF-8','TIS-620',$cLocation), $txtLeft); 
+	$worksheet->write($rows, 12,  iconv('UTF-8','TIS-620',$Problem), $txtLeft); 
+	$worksheet->write($rows, 13,  iconv('UTF-8','TIS-620',$CurrentService), $txtLeft); 
+	
+	$worksheet->write($rows, 14,  iconv('UTF-8','TIS-620',$cMessage), $txtWarp); 
+	
+
+## if loop this position to end loop
+
+
+$workbook->close();
+/*
+header("Content-Type: application/x-msexcel; name=\"example-simple.xls\"");
+header("Content-Disposition: inline; filename=\"example-simple.xls\"");
+*/
+
+
+header("Content-Type:application/msexcel; charset=windows-874");
+header("Content-Disposition: attachment; filename=contact-info.xls");
+
+
+$fh=fopen($fname, "rb");
+fpassthru($fh);
+unlink($fname);
+
+
+?>

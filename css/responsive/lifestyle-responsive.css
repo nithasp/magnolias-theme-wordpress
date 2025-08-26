@@ -1,0 +1,53 @@
+@media (max-width: 1300px) {
+  .lifestyle-section1 .boulevard-offers br,
+  .lifestyle-section7 .boulevard-offers br,
+  .lifestyle-section9 .boulevard-offers br,
+  .lifestyle-section11 .boulevard-offers br,
+  .lifestyle-section13 .boulevard-offers br {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .lifestyle-section2-PC {
+    display: none;
+  }
+
+  .lifestyle-section10-item2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .facilities-section5-item2 {
+    padding-left: 10px;
+  }
+  .lifestyle-section10-item1-1,
+  .lifestyle-section10-item2-2 {
+    width: 100%;
+  }
+
+  .lifestyle-section11 {
+    margin-top: 50px;
+  }
+
+  .lifestyle-tablet-1200px .boulevard-offers p:nth-child(2) {
+    font-family: "calibri";
+    font-size: 14px;
+    color: #c9952b;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .lifestyle-tablet-1200px .boulevard-offers p:nth-child(3) {
+    font-family: "calibri";
+    font-size: 14px;
+    color: #c9952b;
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lifestyle-section10-item1-2,
+  .lifestyle-section10-item2-1-1 {
+    margin-top: 50px;
+  }
+}

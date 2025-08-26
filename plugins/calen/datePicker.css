@@ -1,0 +1,319 @@
+table.jCalendar {
+	/*border: 1px solid #000;*/
+	background: none;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+table.jCalendar th {
+	/*background: #333;*/
+	color: #2E4674;
+	font-weight: bold;
+	/*padding: 3px 5px;*/
+	font-family:Arial;
+	font-size:18px;
+	padding:14px;
+	/*border: 1px solid #ababab;*/
+	border-top-width: 1px;
+	border-top-style: none;
+	border-top-color: #ababab;
+	border-right-color: #ababab;
+	border-left-color: #ababab;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-width: 1px;
+}
+
+table.jCalendar td {
+	background: none;
+	color: #777;
+	padding: 10px;
+	text-align: center;
+	font-size:22px;
+	border-top-width: 1px;
+	border-top-style: none;
+	border-top-color: #ababab;
+	border-right-color: #ababab;
+	border-left-color: #ababab;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: none;
+	border-left-style: none;
+}
+table.jCalendar td.other-month {
+	background: #f7f7f7;
+	color: #aaa;
+	font-size:14px;
+}
+table.jCalendar td.today {
+	font-size:22px;
+	color:#2E4674;
+}
+table.jCalendar td.selected {
+	/*background: #000;*/
+	color: #fff;
+	font-family:Arial;
+	font-size:18px;
+	background:#2E4674;
+}
+table.jCalendar td.selected.dp-hover {
+	background: #cccccc;
+	color: #fff;
+	font-size:18px;
+}
+table.jCalendar td.dp-hover,
+table.jCalendar tr.activeWeekHover td {
+	background: #f1f1f1;
+	color: #000;
+	font-size:22px;
+}
+table.jCalendar tr.selectedWeek td {
+	background: #f66;
+	color: #fff;
+	font-size:14px;
+}
+table.jCalendar td.disabled, table.jCalendar td.disabled.dp-hover {
+	
+	font-size:22px;
+	color:#ECECEC;
+}
+table.jCalendar td.unselectable,
+table.jCalendar td.unselectable:hover,
+table.jCalendar td.unselectable.dp-hover {
+	background: #77736B;
+	color: #504B40;
+	font-size:14px;
+}
+
+/* For the popup */
+
+/* NOTE - you will probably want to style a.dp-choose-date - see how I did it in demo.css */
+div.dp-popup h2{color:#FFF; font-family:Arial; font-weight:normal; font-size:14px; padding-top:2px; line-height:1.5em;}
+div.dp-popup {
+	position: relative;
+	background:none;
+	font-size: 11px;
+	font-family: Arial, serif;
+	width: auto;
+	line-height: 1.2em;
+}
+div#dp-popup {
+	position: absolute;
+	z-index: 199;	
+	border:28px solid #FFF;
+	background:#FFF;
+	left: 50%;
+	margin-left: -160px;
+	top: 179px;
+}
+div.dp-popup h2 {
+	font-size: 14px;
+	text-align: center;
+	padding: 15px;
+	margin: 0;
+	background: #273D66;
+}
+a#dp-close {
+	color:#ffffff;
+	font-size: 11px;
+	padding: 4px 0;
+	text-align: center;
+	display: block;
+	
+}
+#cbut {width:auto;
+	position:absolute;
+	bottom:0;
+	right:0;
+	background:#AFAFAF;
+	padding:3px;
+	border-radius:5px;
+	}
+a#dp-close:hover {
+/*	text-decoration: underline;*/
+}
+div.dp-popup a {
+	color: #fff;
+	text-decoration: none;
+	padding: 3px 2px 0;
+}
+div.dp-popup div.dp-nav-prev {
+	position: absolute;
+	top: 11px;
+	left: 10px;
+	width: 100px;
+}
+div.dp-popup div.dp-nav-prev a {
+	float: left;
+}
+/* Opera needs the rules to be this specific otherwise it doesn't change the cursor back to pointer after you have disabled and re-enabled a link */
+div.dp-popup div.dp-nav-prev a, div.dp-popup div.dp-nav-next a {
+	cursor: pointer;
+}
+div.dp-popup div.dp-nav-prev a.disabled, div.dp-popup div.dp-nav-next a.disabled {
+	cursor: default;
+}
+div.dp-popup div.dp-nav-next {
+	position: absolute;
+	top: 11px;
+	right: 10px;
+	width: 100px;
+}
+div.dp-popup div.dp-nav-next a {
+	float: right;
+}
+div.dp-popup a.disabled {
+	cursor: default;
+	color: #aaa;
+}
+div.dp-popup td {
+	cursor: pointer;
+}
+div.dp-popup td.disabled {
+	cursor: default;
+}
+/* /////////////////////////////////////// */
+#chooseDateForm li {
+	list-style: none;
+	padding: 5px;
+	clear: both;
+}
+select {
+	/*width: 100px;*/
+}
+input {
+	/*width: 100px;*/
+	margin: 0;
+}
+input.dp-applied {
+	width: 140px;
+	float: left;
+}
+
+a.dp-choose-date {
+	float: left;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	height: 74px;
+	position: absolute;
+	text-indent: -2000px;
+	margin: 1px 0 0; 
+}
+a.dp-choose-date.dp-disabled {
+	background-position: 0 -20px;
+	cursor: default;
+}
+
+#calendar-me {
+	margin: 20px;
+}
+.date-pick{
+	background:#ffffff;
+	font-family: Arial;
+	color: #777;
+	border: 1px solid #eee;
+	margin-top: 3px;
+	padding: 5px;
+	height: 16px;
+	font-size: 14px;
+}
+#resetForm {
+	cursor: pointer;
+}
+.list-pick{
+	font-family: Arial;
+	font-size: 10px;
+	color: #69665d;
+	border: 1px solid #69665d;
+}
+
+
+
+
+#multimonth {
+			border: 2px solid #000;
+			overflow: auto;
+			float: left;
+		}
+		.dp-applied {
+			float: left;
+			width: 100%;
+		}
+		table.jCalendar {
+			border: none;
+			width: 100%;
+			height: 314px;
+		}
+		.dp-popup-inline {
+		}
+		.other-month {visibility:hidden;}
+		.dp-calendar {
+	margin:10px 0 0 0;}
+		.book-btn{
+			text-decoration:none;
+			font-family:Arial;
+			background:#273D66;
+			color:#FFFFFF;
+			width:135px;
+			display:block;
+			padding:10px;
+			text-align:center;;}
+/*========================
+	STYLE NEW CALENDAR
+==========================*/
+body{background-color: #000;}
+#cls{clear: both;}
+#mouth-in,#mouth-out,#nigth-title{
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	text-transform:uppercase;
+	font-size: 12px;
+	font-family: arial;
+}
+#date-in,#date-out,#night-num{
+	padding: 10px;
+	font-family: arial;
+	font-size: 46px;
+	cursor: pointer;
+}
+#year-in,#year-out{
+	padding: 10px;
+	border-top: 1px solid #ccc;
+	text-transform:uppercase;
+	font-size: 12px;
+}
+/*#date-in-out{
+	position: relative;
+	height: auto;
+	border: 1px solid #000;
+	margin: 0 auto;
+	width: 330px;
+	background: #F3F3F3;
+	padding: 20px;
+	font-family: arial;
+}*/
+/*.box3:hover #date-in ,.box3:hover #date-out{
+	background-color: #273D66;
+	color: #fff;
+}*/
+.box3{
+	position: relative;
+	width: 118px;
+	text-align: center;
+	float: left;
+	margin: 5px 5px 15px;
+	background-color: #fff;
+}
+#date-arrow{
+	background: #fff url(ar-down.png) 50% center no-repeat;
+	margin-bottom: -20px;
+	height: 24px;
+	border-top: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+/*.box-promo{float: left;display: inline; width: 155px;margin: 5px;}
+.box-promo input{width:135px;height: 17px;text-align: center;background:#ffffff; border:none; font-size:14px;padding: 11px; color:#181818;}
+.book{float: right;margin:5px;width: 155px;display: inline;}*/

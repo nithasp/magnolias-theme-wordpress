@@ -1,0 +1,88 @@
+@media (max-width: 1500px) {
+  .facilities-section5-item1-1,
+  .facilities-section5-item2-2,
+  .facilities-section5-item3-1,
+  .facilities-section5-item4-2 {
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .inner {
+    width: 97%;
+  }
+  .facilities-section2-item1 img,
+  .facilities-section2-item2 img,
+  .facilities-section5-item1 img,
+  .facilities-section5-item2 img,
+  .facilities-section5-item3 img,
+  .facilities-section5-item4 img,
+  .facilities-section13-item1 img,
+  .facilities-section13-item2 img,
+  .facilities-section16-item1 img,
+  .facilities-section16-item2 img {
+    width: 100%;
+  }
+  .facilities-section2-item1-2 {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+  }
+  .facilities-section2-item2,
+  .facilities-section5-item2,
+  .facilities-section5-item4,
+  .facilities-section13-item2,
+  .facilities-section16-item2 {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .facilities-section2-item2-1 {
+    margin-top: 40px;
+    margin-bottom: -20px;
+  }
+  .facilities-section2-item2-1 p:nth-child(2) {
+    font-size: 30px;
+}
+  .facilities-section13-item2-1 {
+    margin-top: 40px;
+    margin-bottom: -90px;
+    text-align: left;
+  }
+
+}
+
+@media (max-width:613px) {
+  .facilities-section6-item1 br,
+  .facilities-section10-item1 br {
+    display:none;
+  }
+}
+
+
+
+@media (max-width: 568px) {
+  .facilities-section6 {
+    margin-top: 50px;
+}
+  .facilities-section13-item1-1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .facilities-section13-item1-1 br {
+    display: none;
+  }
+
+  .facilities-section1 .boulevard-offers {
+    padding: 0px;
+  }
+  .facilities-section2-item1-2 {
+    padding: 0px;
+  }
+  .facilities-section8 .boulevard-offers {
+    padding: 0px;
+  }
+  .facilities-section15 .boulevard-offers {
+    padding: 0px;
+  }
+}

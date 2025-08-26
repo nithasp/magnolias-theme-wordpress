@@ -1,0 +1,18 @@
+#multimonth {
+			border: 2px solid #000;
+			overflow: auto;
+			float: left;
+		}
+		.dp-applied {
+			float: left;
+			width:210px;
+			
+		}
+		table.jCalendar {
+			border: none;
+		}
+		.dp-popup-inline {
+			height: 200px;
+		}
+		.other-month {visibility:hidden;}
+		.dp-calendar {margin:10px 0 0 0;}

@@ -1,0 +1,278 @@
+/* DESKTOP Two-Bedroom */
+.Magnolia-Website-two-bedroom .cover {
+  background-position: center;
+}
+
+@media (max-width: 1506px) {
+  .two-bedroom-section2-item2-2-3 .D-4,
+  .two-bedroom-section2-item2-2-4 .D-4 {
+    width: 41%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section5 .inner {
+    width: 98%;
+  }
+  .section5-item1-2,
+  .section5-item2-2,
+  .section5-item3-2 {
+    margin-top: 20px;
+  }
+  .two-bedroom-section2-item2-2-3 .D-4,
+  .two-bedroom-section2-item2-2-4 .D-4 {
+    width: 50%;
+  }
+
+  /* Two Bedroom */
+  /* .row {
+        margin-right:-15px;
+    } */
+}
+
+@media (max-width: 1024px) {
+  .two-bedroom-section2-item2-2-4-row {
+    font-size: 17px;
+    text-align: left;
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 992px) {
+  .two-bedroom-section2 .inner {
+    width: 94%;
+  }
+
+  .two-bedroom-section5 .inner {
+    width: 97%;
+  }
+
+  .two-bedroom-section2-item2-1 {
+    text-align: center;
+  }
+  .two-bedroom-section2-item2-2 {
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 30px;
+  }
+  .two-bedroom-section2-item2-2-1,
+  .two-bedroom-section2-item2-2-2,
+  .two-bedroom-section2-item2-2-5 {
+    text-align: center;
+  }
+  .two-bedroom-section2-item2-2-3 {
+    text-align: center;
+  }
+
+  .two-bedroom-section2-item2-2-4 {
+    text-align: center;
+  }
+  .two-bedroom-section2-item2-2-4-row ul {
+    list-style-position: inside;
+  }
+
+  .two-bedroom-section2-item2-2-4 ul li span {
+    left: -12px;
+  }
+  .two-bedroom-section2-item2-2-4-li1 {
+    margin-left: 48px;
+  }
+  .two-bedroom-section2-item2-2-4-li2 {
+  }
+  .two-bedroom-section2-item2-2-4-li3 {
+    margin-left: -17px;
+  }
+
+  .two-bedroom-section2-item2-2-4-li4 {
+    margin-left: -14px;
+  }
+  .two-bedroom-section2-item2-2-4-li5 {
+    margin-left: -10px;
+  }
+  .two-bedroom-section2-item2-2-4-li6 {
+    margin-left: -24px;
+  }
+  .two-bedroom-section2-item2-2-3-item1-cover {
+    margin-left: -26px;
+  }
+
+  /* Two bedroom */
+  .two-bedroom-section2-item2-2-3-1-1 {
+    margin-left: 17px;
+  }
+  .two-bedroom-section2-item2-2-3-2-1 {
+    margin-left: -51px;
+  }
+  .two-bedroom-section2-item2-2-4-li1 {
+    margin-left: 2px;
+  }
+  .two-bedroom-section2-item2-2-4-li2 {
+    margin-left: 6px;
+  }
+  .two-bedroom-section2-item2-2-4-li3 {
+    margin-left: -17px;
+  }
+  .two-bedroom-section2-item2-2-4-3 {
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .section5 .inner {
+    width: 100%;
+  }
+  .section5-item1-2,
+  .section5-item2-2,
+  .section5-item3-2 {
+    margin-top: 15px;
+  }
+  .section5-item1-3,
+  .section5-item2-3,
+  .section5-item3-3 {
+    margin-bottom: 25px;
+  }
+
+  /* Two Bedroom */
+  .inner {
+    width: 96%;
+  }
+  .two-bedroom-section5 .inner {
+    width: 99%;
+  }
+  .two-bedroom-section2-item2-2-4-row {
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .two-bedroom-section2-item2-1 {
+    width:auto;
+}
+  .two-bedroom-section2-item2-2-1 p {
+    font-size: 14px;
+  }
+  .two-bedroom-section2-item2-2-3-1,
+  .two-bedroom-section2-item2-2-3-2 {
+    font-size: 14px;
+  }
+  .two-bedroom-section2-item2-2-3-1 {
+    margin-left: -14px !important;
+  }
+
+  .two-bedroom-section2-item2-2-3-1-1 {
+    font-size: 14px;
+    margin-left: 47px;
+  }
+  .two-bedroom-section2-item2-2-3-2-1 {
+    font-size: 14px;
+    margin-left: -9px;
+  }
+  .two-bedroom-section2-item2-2-4 p {
+    font-size: 14px;
+  }
+  .two-bedroom-section2-item2-2-4-row {
+    font-size: 14px;
+  }
+  .two-bedroom-section2-item2-2-4-row ul:first-child {
+    margin-left: -25px;
+  }
+  .two-bedroom-section2-item2-2-4-li1 {
+    margin-left: 39px;
+  }
+  .two-bedroom-section2-item2-2-4-li3 {
+    margin-left: -14px;
+  }
+  .two-bedroom-section2-item2-2-4-li4 {
+    margin-left: -3px;
+  }
+  .two-bedroom-section2-item2-2-4-li5 {
+    margin-left: 1px;
+  }
+  .two-bedroom-section2-item2-2-4-li6 {
+    margin-left: -11px;
+  }
+  .two-bedroom-section2-item2-2-5 .bdbutton {
+    font-size: 10px;
+  }
+
+  /* Two Bedroom */
+  .two-bedroom-section2-item2-2-3-1-1 {
+    margin-left: -6px;
+  }
+  .two-bedroom-section2-item2-2-3-2-1 {
+    margin-left: -47px;
+  }
+  .two-bedroom-section2-item2-2-4-li1 {
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 470px) {
+  /*  */
+  .two-bedroom-section2-item2-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 356px) {
+  .two-bedroom-section2-item2-2-3-1 {
+    margin-left: -34px !important;
+  }
+
+  .D-6.two-bedroom-section2-item2-2-3-item2-cover {
+    width: 35%;
+  }
+  /* .two-bedroom-section2-item2-2-4-row .D-6 {
+    width: 35%;
+  } */
+  .two-bedroom-section2-item2-2-4-li1 {
+    margin-left: 20px;
+  }
+  .two-bedroom-section2-item2-2-4-li2 {
+    margin-left: -20px;
+  }
+  .two-bedroom-section2-item2-2-4-li3 {
+    margin-left: -33px;
+  }
+
+  /*---------- Two Bedroom  --------------*/
+  .two-bedroom-section2-item2-2-3-1-1 {
+    margin-left: -27px !important;
+  }
+  .two-bedroom-section2-item2-2-4-li1 {
+    margin-left: -24px;
+  }
+  .two-bedroom-section2-item2-2-4-li3 {
+    margin-left: -40px;
+  }
+  .two-bedroom-section2-item2-2-4-3 {
+    padding-left:6px !important;
+  }
+  .two-bedroom-section2-item2-2-4-3-ul {
+    padding-left:0px !important;
+  }
+}
+
+
+
+
+
+/* Safari 9+ Responsive */
+@supports (-webkit-marquee-repetition: infinite) and (object-fit: fill) {
+@media (max-width: 992px) {
+  /* Two Bedroom */
+  .two-bedroom-section2-item2-2-3-1,
+  .two-bedroom-section2-item2-2-3-2{
+    font-family: "gotHamMedium";
+  }
+  .two-bedroom-section2-item2-2-4 p {
+    font-family: "gotHamMedium";
+  }
+  .two-bedroom-section2-item2-2-4 ul li span {
+    left: -5px !important;
+  }
+}
+}

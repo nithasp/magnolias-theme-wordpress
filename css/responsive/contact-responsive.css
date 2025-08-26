@@ -1,0 +1,95 @@
+@media (max-width: 1358px) {
+  .iAgree-contact-checkmark {
+    left: 0% !important;
+  }
+  .iAgree br {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1300px) {
+    .contact-section2 .boulevard-offers br{
+        display:none;
+    }
+  }
+
+@media (max-width: 1200px) {
+  .iAgree-contact-checkmark {
+    left: 18% !important;
+  }
+}
+@media (max-width: 1150px) {
+  .iAgree-contact-checkmark {
+    left: 10% !important;
+  }
+}
+
+
+@media (max-width: 853px) {
+    .contact-section1-item2-1,
+    .contact-section1-item2-2,
+    .contact-section1-item2-3 {
+        display:block;
+    }
+    .contact-section1-item2-2 {
+        padding: 20px 0px;
+    }
+    .contact-section1-item2-1, .contact-section1-item2-2, .contact-section1-item2-3 {
+        margin-right: 0px;
+    }
+  }
+
+
+@media (max-width: 835px) {
+    .iAgree-contact-checkmark {
+      left: 0% !important;
+    }
+}
+
+
+@media (max-width:768px){
+    .contact-section2 {
+        margin-top:80px;
+    }
+}
+
+@media (max-width:600px){
+    .content-section4-item1 br {
+        display:none;
+    }
+    .contact-section3 .form-wrap.bd.left {
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+    .contact-section3 label.det {
+        position: absolute;
+        top: 12px;
+        left: 0px !important;
+    }
+    .contact-section3-input1 {
+        padding-left: 120px !important;
+    }
+    .contact-section3-input2 {
+        padding-left: 80px !important;
+    }
+    .contact-section3-input3 {
+        padding-left: 150px !important;
+    }
+    .contact-section3 textarea {
+        padding-left: 95px !important;
+    }
+}
+
+
+@media (max-width:540px){
+    .radio-form3-1 {
+        margin-left: 142px;
+    }
+}
+
+@media (max-width:438px){
+    .radio-form2-1 {
+        margin-left: 142px;
+    }
+}
